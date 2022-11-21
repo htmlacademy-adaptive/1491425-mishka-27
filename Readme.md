@@ -1,7 +1,7 @@
-# Личный проект «Мишка» 
+# Личный проект «Мишка»
 
-* Студент: [Руслан Габжамилов](https://up.htmlacademy.ru/adaptive/27/user/1491425).
-* Наставник: `Неизвестно`.
+- Студент: [Руслан Габжамилов](https://up.htmlacademy.ru/adaptive/27/user/1491425).
+- Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
