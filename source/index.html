@@ -212,6 +212,38 @@
       </section>
     </footer>
 
-
-</body>
+    <!-- Модальное окно -->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal__wrapper">
+        <h2 class="modal__title  modal-title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__form-filter form-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="form-filter__list">
+            <li class="form-filter__item">
+              <label class="control control--hover control--current">
+                <span class="visually-hidden">Выбрать С размер </span>
+                <input class="control__input control-input visually-hidden" type="checkbox" name="size-s" checked>
+                <span class="">S</span>
+              </label>
+            </li>
+            <li class="form-filter__item">
+              <label class="control control--hover">
+                <span class="visually-hidden">Выбрать М размер </span>
+                <input class="control__input control-input visually-hidden" type="checkbox" name="size-m">
+                <span class="">M</span>
+              </label>
+            </li>
+            <li class="form-filter__item">
+              <label class="control control--hover">
+                <span class="visually-hidden">Выбрать Л размер </span>
+                <input class="control__input control-input visually-hidden" type="checkbox" name="size-l">
+                <span class="">L</span>
+              </label>
+            </li>
+          </ul>
+          <button class="form-filter__button modal-button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
