@@ -51,10 +51,10 @@
 			<h1 class="order-main__title">Вязание на заказ</h1>
 			<p class="order-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 		</header>
-		<form class="order-main__form form" action="https://echo.htmlacademy.ru/" method="post">
-			<fieldset class="form__wrapper">
-				<legend class="form__title">Тип</legend>
-				<ul class="form__list group-filters">
+		<form class="order-main__form form form-filters" action="https://echo.htmlacademy.ru/" method="post">
+			<fieldset class="form-filters__wrapper">
+				<legend class="form-filters__title">Тип</legend>
+				<ul class="form-filters__list group-filters">
 					<li class="group-filters__item">
 						<label class="control-radio">
 							<input class="visually-hidden" type="radio" name="type-interior" value="interior-accessory" checked>
@@ -71,9 +71,9 @@
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="form__wrapper">
-				<legend class="form__title">Цвет</legend>
-				<ul class="form__list group-filters">
+			<fieldset class="form-filters__wrapper">
+				<legend class="form-filters__title">Цвет</legend>
+				<ul class="form-filters__list group-filters">
 					<li class="group-filters__item">
 						<label class="control-checkbox">
 							<input class="visually-hidden" type="checkbox" name="color-white" checked>
@@ -118,9 +118,9 @@
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="form__wrapper">
-				<legend class="form__title">ФИО</legend>
-				<ul class="form__list group-filters">
+			<fieldset class="form-filters__wrapper">
+				<legend class="form-filters__title">ФИО</legend>
+				<ul class="form-filters__list group-filters">
 					<li class="group-filters__item">
 						<label class="group-filters__label" for="name-client">Имя:</label>
 						<input class="group-filters__input" type="text" id="name-client" placeholder="Введите ваше имя*" required>
@@ -135,23 +135,23 @@
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="form__wrapper">
-				<legend class="form__title">Тел</legend>
+			<fieldset class="form-filters__wrapper">
+				<legend class="form-filters__title">Тел</legend>
 				<label class="visually-hidden" for="number-phone">Поле ввода для телефона.</label>
-				<input class="form__input" type="tel" id="number-phone" name="form-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+				<input class="form-filters__input" type="tel" id="number-phone" name="form-filters-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
 			</fieldset>
-			<fieldset class="form__wrapper">
-				<legend class="form__title">E-mail</legend>
+			<fieldset class="form-filters__wrapper">
+				<legend class="form-filters__title">E-mail</legend>
 				<label class="visually-hidden" for="e-mail">Поле ввода для электронной почты.</label>
-				<input class="form__input" type="email" id="e-mail" name="form-email" placeholder="Ваш Email*" required>
+				<input class="form-filters__input" type="email" id="e-mail" name="form-filters-email" placeholder="Ваш Email*" required>
 			</fieldset>
-			<fieldset class="form__wrapper">
-				<legend class="form__title">Доп</legend>
+			<fieldset class="form-filters__wrapper">
+				<legend class="form-filters__title">Доп</legend>
 				<label class="visually-hidden" for="additional-information">Поле для дополнительной информации.</label>
-				<textarea class="form__textarea" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+				<textarea class="form-filters__textarea" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 			</fieldset>
-			<p class="form__text">*Поля обязательны для заполнения</p>
-			<button class="form__button" type="submit">Добавить</button>
+			<p class="form-filters__text">*Поля обязательны для заполнения</p>
+			<button class="form-filters__button" type="submit">Добавить</button>
 		</form>
 	</main>
   <footer class="page-form__index-footer main-footer">
