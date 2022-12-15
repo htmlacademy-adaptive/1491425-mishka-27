@@ -1,5 +1,7 @@
 @import "../variables/variables.less";
 
+//Миксины для заголовков:
+
 .title-h1 (@f-family: @open-sans; @f-style: normal; @f-size: 27px; @l-height: 30px; @f-weight: 700; @color: @c-black;) {
   font-family: @f-family;
   font-style: normal;
@@ -27,7 +29,31 @@
   color: @color;
 }
 
+//Миксин для текста:
+
 .text (@f-family: @open-sans; @f-style: normal; @f-size: 15px; @l-height: 24px; @f-weight: 400; @color: @c-tundora;) {
+  font-family: @f-family;
+  font-style: normal;
+  font-size: @f-size;
+  line-height: @l-height;
+  font-weight: @f-weight;
+  color: @color;
+}
+
+//Миксин для кнопки primary-button:
+
+.primary-button (@f-family: @open-sans; @f-style: normal; @f-size: 18px; @l-height: 20px; @f-weight: 700; @color: @c-tundora;) {
+  font-family: @f-family;
+  font-style: normal;
+  font-size: @f-size;
+  line-height: @l-height;
+  font-weight: @f-weight;
+  color: @color;
+}
+
+//Миксин для кнопки secondary-button:
+
+.secondary-button (@f-family: @open-sans; @f-style: normal; @f-size: 17px; @l-height: 16px; @f-weight: 700; @color: @white;) {
   font-family: @f-family;
   font-style: normal;
   font-size: @f-size;
