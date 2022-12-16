@@ -1,0 +1,13 @@
+@import "../mixins/text-mixins.less";
+
+.promo-household__item:nth-child(odd) {
+  background-color: @downy;
+}
+
+.promo-household__item:nth-child(even) {
+  background-color: @bg-fountain-blue;
+}
+
+.promo-household__link {
+  .text (@f-size: 19px; @f-weight: 700; @color: @white;);
+}
