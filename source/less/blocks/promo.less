@@ -1,5 +1,23 @@
-@import "../mixins/text-mixins.less";
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 506px;
+}
+
+.promo--image {
+  background-image: url("../img/promo-image.jpg");
+  background-repeat: no-repeat;
+}
 
 .promo__title {
   .title-h1();
+  margin-top: 0;
+  margin-bottom: 120px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.promo__list {
+  .reset-styles-ul ();
 }
