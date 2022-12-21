@@ -1,7 +1,90 @@
+.about-us {
+  padding: 42px 30px 0;
+}
+
 .about-us__title {
+  margin-top: 0;
+  margin-bottom: 21px;
   .title-h2();
 }
 
+.about-us__list {
+  .reset-styles-ul();
+}
+
+.about-us__item {
+  display: flex;
+  flex-direction: column;
+
+  &--flower::before {
+    content: "";
+    width: 33px;
+    height: 38px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    margin-left: 8px;
+    background-image: url("../../img/about-us-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--banknote::before {
+    content: "";
+    width: 47px;
+    height: 27px;
+    margin-top: 29px;
+    margin-bottom: 27px;
+    margin-left: 0;
+    background-image: url("../../img/about-us-banknote.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--heart::before {
+    content: "";
+    width: 34px;
+    height: 27px;
+    margin-top: 34px;
+    margin-bottom: 22px;
+    margin-left: 7px;
+    background-image: url("../../img/about-us-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--ball::before {
+    content: "";
+    width: 35px;
+    height: 34px;
+    margin-top: 31px;
+    margin-bottom: 18px;
+    margin-left: 3px;
+    background-image: url("../../img/about-us-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--rocket::before {
+    content: "";
+    width: 55px;
+    height: 23px;
+    margin-top: 32px;
+    margin-bottom: 27px;
+    margin-left: -6px;
+    background-image: url("../../img/about-us-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--packaging::before {
+    content: "";
+    width: 33px;
+    height: 32px;
+    margin-top: 31px;
+    margin-bottom: 21px;
+    margin-left: 3px;
+    background-image: url("../../img/about-us-packaging.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .about-us__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
   .title-h3();
 }
