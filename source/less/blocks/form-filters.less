@@ -1,7 +1,124 @@
+.form-filters {
+  padding: 28px 30px 0;
+}
+
+.form-filters__wrapper {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-filters__radio {
+  display: inline-grid;
+  grid-template-rows: max-content;
+  row-gap: 29px;
+  margin-bottom: 30px;
+}
+
+.form-filters__checkbox {
+  display: inline-grid;
+  grid-template-rows: max-content;
+  row-gap: 22px;
+  margin-bottom: 32px;
+}
+
+.form-filters__input-date {
+  display: grid;
+  grid-template-rows: max-content;
+  row-gap: 27px;
+  margin-bottom: 33px;
+}
+
+.form-filters__tel {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 4px;
+  margin-bottom: 33px;
+}
+
+.form-filters__mail {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 5px;
+  margin-bottom: 33px;
+}
+
+.form-filters__additionally {
+  display: grid;
+  margin-bottom: 16px;
+  row-gap: 20px;
+}
+
 .form-filters__title {
-  .title-h3(@l-height: 20px; @color: @downy;);
+  .title-h3(@l-height: 16px; @color: @downy;);
+  display: contents;
+  margin-bottom: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.form-filters__list-radio {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  row-gap: 13px;
+}
+
+.form-filters__list-checkbox {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  row-gap: 23px;
+}
+
+.form-filters__list-input-date {
+  display: inline-grid;
+  grid-template-rows: max-content;
+  row-gap: 23px;
+}
+
+.form-filters__list {
+  .reset-styles-ul ();
+}
+
+.form-filters__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2px;
+}
+
+.form-filters__label {
+  .text (@f-size: 17px; @l-height: 18px; @f-weight: 700; @color: @c-black;);
+}
+
+.form-filters__input {
+  .reset-styles-input ();
+  width: 100%;
+  padding: 17px 0;
+  box-shadow: inset 0 -2px 0 #000000;
+}
+
+.form-filters__input::placeholder {
+  .text (@f-size: 17px; @l-height: 18px; @color: @c-black;);
+  opacity: 0.3;
+}
+
+.form-filters__textarea {
+  .text (@f-size: 17px; @l-height: 18px; @color: @c-black;);
+  min-height: 105px;
+  padding: 17px 17px;
+  border: 2px solid #444444;
+  opacity: 0.3;
+  box-shadow: inset 0 -2px 0 #000000;
 }
 
 .form-filters__text {
   .text (@f-size: 14px; @l-height: 16px;);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.form-filters__button {
+  .primary-btn (@f-size: 17px; @l-height: 16px;);
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
 }
