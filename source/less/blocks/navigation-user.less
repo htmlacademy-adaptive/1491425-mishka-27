@@ -2,6 +2,69 @@
   .reset-styles-ul (); //Миксин
 }
 
+@media (min-width: @tablet-width) {
+  .navigation-user {
+    display: grid;
+    grid-template-columns: 24% 76%;
+    min-height: 89px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.navigation-user__item {
+  padding: 0 30px;
+  box-shadow: 0 1px 0 @bg-gallery, inset 0 1px 0 @bg-gallery;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation-user__item {
+    display: grid;
+    justify-self: end;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
 .navigation-user__link {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 27px;
+  padding: 28.5px 0 26.5px 0;
   .text (@f-size: 17px; @f-weight: 700; @color: @c-black;);
+}
+
+@media (min-width: @tablet-width) {
+  .navigation-user__link {
+    display: grid;
+    column-gap: 30px;
+    padding: 0;
+  }
+
+  .navigation-user__link-tablet {
+    padding-top: 35px;
+    padding-bottom: 34px;
+    padding-left: 34px;
+  }
+}
+
+.navigation-user__icon {
+
+}
+
+.navigation-user__link .visually-hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation-user__link .visually-hidden {
+    display: inline;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .navigation-user__text--hidden-tablet {
+    display: none;
+  }
 }

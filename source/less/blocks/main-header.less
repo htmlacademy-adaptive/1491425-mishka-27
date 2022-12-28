@@ -1,21 +1,109 @@
 .main-header {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 21px;
+  grid-template-columns: 1fr max-content;
   align-items: center;
-  column-gap: 67px;
-  min-height: 78px;
-  padding: 0 30px;
-  box-shadow: 0 1px 0 #ececec, inset 0 -1px 0 #ececec;
+  min-width: 320px;
+  min-height: 79px;
+  margin: auto;
+  padding: 0 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 89px 63px;
+    min-width: 768px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    max-width: 1150px;
+/*     max-width: 1200px; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .main-header__logo {
-  margin-left: auto;
+  display: block;
+  width: 86px;
+  height: 36px;
+  margin-left: 18px;
+  justify-self: center;
+  background-image: url("../../img/header-logo-mobile.png");
+  background-repeat: no-repeat;
 }
 
-.main-header__logo-image {
-  display: block;
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    margin-left: -2px;
+    width: 113px;
+    height: 46px;
+    justify-self: start;
+    order: 1;
+    background-image: url("../../img/header-logo-tablet.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    display: block;
+    min-width: 149px;
+    min-height: 72px;
+    grid-column: 3 / 5;
+    justify-self: center;
+    background-image: none;
+  }
+}
+
+.main-header__icon {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__icon {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__icon {
+    display: block;
+  }
 }
 
 .main-header__navigation {
-  position: relative;
+  margin-bottom: 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__navigation {
+    margin-bottom: 0;
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__navigation {
+    grid-column: 5 / -1;
+  }
+}
+
+.main-header__text {
+  display: none;
+  .text ();
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__text {
+    display: inline-block;
+    order: 3;
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
 }
