@@ -1,5 +1,4 @@
 .main-footer {
-  position: relative;
   display: grid;
   justify-items: center;
   max-width: 320px;
@@ -8,14 +7,10 @@
   background-color: @bg-seashell;
 }
 
-.main-footer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.main-footer--separator::after {
+  width: 260px;
   height: 1px;
-  background-color: #e5e5e5;
+  background-color: @bg-whisper;
 }
 
 .main-footer__socials {
