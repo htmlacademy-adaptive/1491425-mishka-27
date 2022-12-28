@@ -12,6 +12,16 @@
 
 }
 
-.page__position {
+.page__centering {
   margin: auto;
+}
+
+.page__position-footer {
+  position: relative;
+}
+
+.page__position-footer::after {
+  content: "";
+  position: absolute;
+  top: 99px;
 }
