@@ -7,12 +7,42 @@
   border: 1px solid @bg-gallery;
 }
 
+@media (min-width: @desktop-width) {
+  .slider__button {
+    height: 50px;
+  }
+}
+
 .slider__button--prev {
   width: 129px;
   background-image: url(../../img/reviews-arrow-left.svg);
 }
 
+@media (min-width: @tablet-width) {
+  .slider__button--prev {
+    width: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__button--prev {
+    width: 85px;
+  }
+}
+
 .slider__button--next {
   width: 138px;
   background-image: url(../../img/reviews-arrow-right.svg);
+}
+
+@media (min-width: @tablet-width) {
+  .slider__button--next {
+    width: 89px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__button--next {
+    width: 88px;
+  }
 }

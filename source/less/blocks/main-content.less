@@ -1,7 +1,25 @@
+.main-content {
+  width: 100%;
+  min-width: 320px;
+  flex-grow: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .main-content {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-content {
+    min-width: 1150px;
+    max-width: 1200px;
+  }
+}
+
 .main-content__promo {
   margin-top: -16px;
   margin-bottom: 31px;
-  min-height: 373px;
 }
 
 .main-content__product-week {
@@ -10,6 +28,7 @@
 }
 
 .main-content__reviews {
+  position: relative;
   margin-bottom: 38px;
 }
 
