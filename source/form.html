@@ -63,9 +63,9 @@
   <main class="page__centering order-main">
     <h1 class="order-main__title">Вязание на заказ</h1>
     <p class="order-main__text">Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
-    <form class="order-main__form form form-filters" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="order-main__form form-filters" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form-filters__wrapper form-filters__radio">
-        <legend class="form-filters__title">Тип</legend>
+        <h3 class="form-filters__title form-filters__title--radio">Тип</h3>
         <ul class="form-filters__list form-filters__list-radio">
           <li class="form-filters__item">
             <label class="control-radio">
@@ -84,7 +84,7 @@
         </ul>
       </div>
       <div class="form-filters__wrapper form-filters__checkbox">
-        <legend class="form-filters__title">Цвет</legend>
+        <h3 class="form-filters__title form-filters__title--checkbox">Цвет</h3>
         <ul class="form-filters__list form-filters__list-checkbox">
           <li class="form-filters__item">
             <label class="control-checkbox">
@@ -131,36 +131,36 @@
         </ul>
       </div>
       <div class="form-filters__wrapper form-filters__input-date">
-        <legend class="form-filters__title">ФИО</legend>
+        <h3 class="form-filters__title form-filters__title--input-date">ФИО</h3>
         <ul class="form-filters__list form-filters__list-input-date">
           <li class="form-filters__item">
             <label class="form-filters__label" for="name-client">Имя:</label>
-            <input class="form-filters__input" type="text" id="name-client" placeholder="Введите ваше имя*" required>
+            <input class="form-filters__input form-filters__input--field-name" type="text" id="name-client" placeholder="Введите ваше имя*" required>
           </li>
           <li class="form-filters__item">
             <label class="form-filters__label" for="surname-client">Фамилия:</label>
-            <input class="form-filters__input" type="text" id="surname-client" placeholder="Укажите фамилию*" required>
+            <input class="form-filters__input form-filters__input--field-surname" type="text" id="surname-client" placeholder="Укажите фамилию*" required>
           </li>
           <li class="form-filters__item">
             <label class="form-filters__label" for="patronymic-client">Отчество:</label>
-            <input class="form-filters__input" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
+            <input class="form-filters__input form-filters__input--field-patronymic" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
           </li>
         </ul>
       </div>
       <div class="form-filters__wrapper form-filters__tel">
-        <legend class="form-filters__title">Тел</legend>
+        <h3 class="form-filters__title form-filters__title--tel">Тел</h3>
         <label class="visually-hidden" for="number-phone">Поле ввода для телефона.</label>
-        <input class="form-filters__input" type="tel" id="number-phone" name="form-filters-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <input class="form-filters__input form-filters__input--field-tel" type="tel" id="number-phone" name="form-filters-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
       </div>
       <div class="form-filters__wrapper form-filters__mail">
-        <legend class="form-filters__title">E-mail</legend>
+        <h3 class="form-filters__title form-filters__title--mail">E-mail</h3>
         <label class="visually-hidden" for="e-mail">Поле ввода для электронной почты.</label>
-        <input class="form-filters__input" type="email" id="e-mail" name="form-filters-email" placeholder="Ваш Email*" required>
+        <input class="form-filters__input form-filters__input--field-mail" type="email" id="e-mail" name="form-filters-email" placeholder="Ваш Email*" required>
       </div>
       <div class="form-filters__wrapper form-filters__additionally">
-        <legend class="form-filters__title">Доп</legend>
+        <h3 class="form-filters__title form-filters__title--additionally">Доп</h3>
         <label class="visually-hidden" for="additional-information">Поле для дополнительной информации.</label>
-        <textarea class="form-filters__textarea" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <textarea class="form-filters__textarea form-filters__textarea--field-additionally" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
       <p class="form-filters__text">*Поля обязательны для заполнения</p>
       <button class="form-filters__button primary-button" type="submit">Отправить заказ</button>

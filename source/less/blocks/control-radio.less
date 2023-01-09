@@ -6,6 +6,18 @@
   cursor: pointer;
 }
 
+@media (min-width: @tablet-width) {
+  .control-radio {
+    column-gap: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control-radio {
+    column-gap: 37px;
+  }
+}
+
 .control-radio__custom {
   position: relative;
   box-sizing: border-box;
@@ -14,6 +26,13 @@
   height: 40px;
   border: 2px solid @c-tundora;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .control-radio__custom {
+    width: 50px;
+    height: 49px;
+  }
 }
 
 .control-input[type="radio"]:checked + .control-radio__custom::before {
@@ -27,6 +46,21 @@
   border-radius: 50%;
 }
 
+@media (min-width: @tablet-width) {
+  .control-input[type="radio"]:checked + .control-radio__custom::before {
+    top: 12px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .control-radio__text {
   .text (@f-size: 17px; @l-height: 18px; @f-weight: 700; @color: @c-black;);
+}
+
+@media (min-width: @tablet-width) {
+  .control-radio__text {
+    .text (@f-size: 19px; @l-height: 18px; @f-weight: 700; @color: @c-black;);
+  }
 }

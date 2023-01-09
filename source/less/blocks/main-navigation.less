@@ -1,10 +1,10 @@
-.main-navigation {
+/* .main-navigation {
 
 }
 
 .main-navigation--closed {
 
-}
+} */
 
 .main-navigation__toggle {
   position: relative;
@@ -55,7 +55,6 @@
   box-sizing: border-box;
 }
 
-
 @media (min-width: @tablet-width) {
   .main-navigation__wrapper {
     position: static;
@@ -64,7 +63,21 @@
   }
 }
 
-
 .main-navigation__list {
+  .reset-styles-ul ();
+}
 
+@media (min-width: @tablet-width) {
+  .main-navigation__list.navigation-site {
+    position: absolute;
+    top: 108px;
+    left: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__list.navigation-site {
+    top: 33px;
+    left: 50px;
+  }
 }
