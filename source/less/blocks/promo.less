@@ -63,10 +63,38 @@
   min-height: 506px;
 }
 
+@media (min-width: @tablet-width) {
+  .promo {
+    min-height: 590px;
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    max-width: 1150px;
+    min-height: 588px;
+    padding-top: 128px;
+  }
+}
+
 .promo--image {
-  background-image: url("../img/promo-image.jpg");
+  background-image: url("../img/promo-hero-mobile.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .promo--image {
+    background-image: url("../img/promo-hero-tablet.jpg");
+    background-position: top 2px center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo--image {
+    background-position: top -30px center;
+  }
 }
 
 .promo__title {
@@ -79,30 +107,56 @@
   .title-h1();
 }
 
+@media (min-width: @tablet-width) {
+  .promo__title {
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    .title-h1 (@f-size: 43px; @l-height: 50px;);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__title {
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    .title-h1 (@f-size: 53px; @l-height: 57px; @f-weight: 700;);
+  }
+}
+
 .promo__list {
   .reset-styles-ul ();
 }
 
-.promo-household {
-
+@media (min-width: @tablet-width) {
+  .promo__list {
+    position: relative;
+  }
 }
 
-.promo-household--image {
-
+@media (min-width: @tablet-width) {
+  .promo__list-image::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 770px;
+    min-height: 24px;
+    background-image: url(../img/promo-zigzag-tablet.png);
+    background-repeat: no-repeat;
+  }
 }
 
-.promo-household__item {
-
-}
-
-.promo-household__link {
-
-}
-
-.promo-household__link--lamp {
-
-}
-
-.promo-household__link--cube {
-
+@media (min-width: @desktop-width) {
+  .promo__list-image::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 1250px;
+    min-height: 34px;
+    background-image: url(../img/promo-zigzag-desktop.png);
+    background-repeat: no-repeat;
+  }
 }
