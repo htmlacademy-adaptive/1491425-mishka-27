@@ -1,5 +1,4 @@
 .main-content {
-  width: 100%;
   min-width: 320px;
   flex-grow: 1;
 }
@@ -12,13 +11,19 @@
 
 @media (min-width: @desktop-width) {
   .main-content {
-    max-width: 1150px;
+    min-width: 1150px;
   }
 }
 
 .main-content__promo {
   margin-top: -17px;
 }
+
+/* @media (min-width: @tablet-width) {
+  .main-content__promo {
+    margin-top: -54px;
+  }
+} */
 
 .main-content__product-week {
 
