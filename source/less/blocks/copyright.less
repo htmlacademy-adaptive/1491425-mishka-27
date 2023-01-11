@@ -1,3 +1,27 @@
+.copyright {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  column-gap: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    column-gap: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    column-gap: 28px;
+  }
+}
+
 .copyright__text {
   .text (@f-size: 19px; @l-height: 18px; @f-weight: 700; @color: @c-black;);
+}
+
+.copyright__link {
+  display: flex;
+  padding-top: 1px;
 }
