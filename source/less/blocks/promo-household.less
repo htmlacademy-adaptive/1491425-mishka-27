@@ -1,43 +1,6 @@
-/* @media (min-width: @tablet-width) {
-  .promo-household {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+/* .promo-household {
 
-.promo-household__item:nth-child(odd) {
-  background-color: @downy;
-}
-
-.promo-household__item:nth-child(even) {
-  background-color: @bg-fountain-blue;
-}
-
-.promo-household__link {
-  display: block;
-  padding: 24px 160px 31px 30px;
-  .text (@f-size: 19px; @f-weight: 700; @color: @white;);
-}
-
-@media (min-width: @tablet-width) {
-  .promo-household__link {
-    padding: 26px 160px 29px 36px;
-    .text (@f-size: 20px; @l-height: 30px; @f-weight: 700; @color: @white;);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .promo-household__link {
-    padding-right: 304px;
-    .text (@f-size: 20px; @l-height: 30px; @f-weight: 700; @color: @white;);
-  }
-}
- */
-
-
-.promo-household {
-
-}
+} */
 
 @media (min-width: @tablet-width) {
   .promo-household {
@@ -55,23 +18,23 @@
     position: relative;
     overflow: hidden;
 
-  &--left-zigzak::after,
-  &--right-zigzak::after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    width: 770px;
-    min-height: 24px;
-    background-image: url("../img/promo-zigzag-tablet.png");
-    background-repeat: no-repeat;
-  }
+    &--left-zigzak::after,
+    &--right-zigzak::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      width: 770px;
+      min-height: 24px;
+      background-image: url("../img/promo-zigzag-tablet.png");
+      background-repeat: no-repeat;
+    }
 
-  &--left-zigzak::after {
-    right: -2px;
-  }
+    &--left-zigzak::after {
+      right: -2px;
+    }
 
-  &--right-zigzak::after {
-    left: 0;
+    &--right-zigzak::after {
+      left: 0;
     }
   }
 }
@@ -88,11 +51,11 @@
     background-repeat: no-repeat;
   }
 
-  .promo-household__item--left-zigzak::after{
+  .promo-household__item--left-zigzak::after {
     right: -112px;
   }
 
-  .promo-household__item--right-zigzak::after{
+  .promo-household__item--right-zigzak::after {
     left: -12px;
   }
 }
@@ -130,10 +93,10 @@
   background-color: @bg-fountain-blue;
 }
 
-.promo-household__link--lamp {
+/* .promo-household__link--lamp {
 
 }
 
 .promo-household__link--cube {
 
-}
+} */
