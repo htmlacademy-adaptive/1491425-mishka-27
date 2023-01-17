@@ -1,40 +1,45 @@
 .main-footer {
-  box-sizing: border-box;
-  display: grid;
-  width: 100%;
-  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   min-height: 160px;
-  padding: 27px 30px 6px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 27px;
+  padding-bottom: 22px;
   background-color: @bg-seashell;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .main-footer {
-    grid-template-columns: repeat(3, 1fr);
-    min-width: 768px;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-auto-flow: dense;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
     min-height: 143px;
     padding: 0 50px;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .main-footer {
-    max-width: 1150px;
-    /* max-width: 1300px; */
-    min-height: 143px;
-    column-gap: 191px;
+    width: 1150px;
   }
 }
 
-.main-footer--separator::after {
+.main-footer::after {
+  content: "";
   width: 260px;
   height: 1px;
-  justify-self: center;
+  margin-bottom: 21px;
   background-color: @bg-whisper;
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer--separator::after {
+  .main-footer::after {
     display: none;
   }
 }
@@ -46,53 +51,14 @@
 @media (min-width: @tablet-width) {
   .main-footer__logo {
     display: block;
-    align-self: center;
-    margin-bottom: 3px;
+    grid-column: 1 / 1 span;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-footer__logo {
-    margin-bottom: 3px;
-  }
+  margin-bottom: 2px;
 }
 
-.main-footer__socials {
-  justify-self: center;
-}
+.main-footer__logo-icon {
 
-@media (min-width: @tablet-width) {
-  .main-footer__socials {
-    margin-bottom: 2px;
-    padding-top: 0;
-    justify-self: start;
-    align-self: center;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-footer__socials {
-    margin-bottom: 2px;
-    justify-self: start;
-  }
-}
-
-.main-footer__copyright {
-  justify-self: center;
-}
-
-@media (min-width: @tablet-width) {
-  .main-footer__copyright {
-    margin-bottom: 7px;
-    padding-top: 0;
-    justify-self: end;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-footer__copyright {
-    margin-bottom: 7px;
-    padding-top: 0;
-    justify-self: end;
-  }
 }
