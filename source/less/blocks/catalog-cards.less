@@ -1,1 +1,114 @@
-//
+/* .catalog-cards {
+  padding: 48px 30px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-cards {
+    padding-top: 98px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-cards {
+    margin-bottom: 7px;
+    padding-top: 98px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.catalog-cards__list {
+  .reset-styles-ul ();
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-cards__list {
+    display: grid;
+    grid-template-columns: repeat(3, 316px);
+    column-gap: 51px;
+  }
+}
+
+.catalog-cards__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-cards__item:not(:last-child) {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-cards__item {
+    margin-bottom: 52px;
+  }
+}
+
+-----------------------------------------------------
+ */
+
+.catalog-cards {
+  background-color: @white;
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-cards {
+    padding-top: 0;
+  }
+}
+
+.catalog-cards__list {
+  .reset-styles-ul ();
+  padding: 0 30px;
+  padding-top: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-cards__list {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-cards__list {
+    display: grid;
+    grid-template-columns: 316px 315px 316px;
+    grid-auto-flow: dense;
+    column-gap: 51px;
+    padding: 0;
+  }
+}
+
+.catalog-cards__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-cards__item {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    padding-top: 48px;
+  }
+
+  .catalog-cards__item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-cards__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+    margin: 0;
+    padding: 0;
+  }
+
+  .catalog-cards__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

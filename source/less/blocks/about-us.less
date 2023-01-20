@@ -1,9 +1,247 @@
-@import "../mixins/text-mixins.less";
+.about-us {
+  box-sizing: border-box;
+  padding-top: 73px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    padding-top: 126px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    padding-top: 164px;
+  }
+}
 
 .about-us__title {
+  margin-top: 0;
+  margin-bottom: 0;
   .title-h2();
 }
 
+@media (min-width: @tablet-width) {
+  .about-us__title {
+    margin-bottom: 0;
+    .title-h2 (@f-size: 43px; @l-height: 50px;);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__title {
+    grid-column: 2 / -1;
+    .title-h2 (@f-size: 53px; @l-height: 57px;);
+  }
+}
+
+.about-us__list {
+  .reset-styles-ul();
+  padding-top: 21px;
+  padding-bottom: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__list {
+    display: grid;
+    grid-template-columns: 234px 293px;
+    column-gap: 101px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__list {
+    grid-column: 2 / -1;
+    column-gap: 116px;
+  }
+}
+
+.about-us__item {
+  display: flex;
+  flex-direction: column;
+
+  &--flower::before {
+    content: "";
+    width: 33px;
+    height: 38px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    margin-left: 8px;
+    background-image: url("../img/about-us-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--banknote::before {
+    content: "";
+    width: 47px;
+    height: 27px;
+    margin-top: 14px;
+    margin-bottom: 27px;
+    margin-left: 0;
+    background-image: url("../img/about-us-banknote.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--heart::before {
+    content: "";
+    width: 34px;
+    height: 27px;
+    margin-top: 19px;
+    margin-bottom: 22px;
+    margin-left: 7px;
+    background-image: url("../img/about-us-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--ball::before {
+    content: "";
+    width: 35px;
+    height: 34px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    margin-left: 3px;
+    background-image: url("../img/about-us-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--rocket::before {
+    content: "";
+    width: 55px;
+    height: 23px;
+    margin-top: 17px;
+    margin-bottom: 27px;
+    margin-left: -6px;
+    background-image: url("../img/about-us-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--packaging::before {
+    content: "";
+    width: 33px;
+    height: 32px;
+    margin-top: 16px;
+    margin-bottom: 21px;
+    margin-left: 3px;
+    background-image: url("../img/about-us-packaging.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--flower {
+      order: 1;
+    }
+
+    &--banknote {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--packaging {
+      order: 6;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--flower::before {
+      margin-top: 19px;
+      margin-bottom: 19px;
+    }
+
+    &--banknote::before {
+      margin-top: 40px;
+      margin-left: 1px;
+    }
+
+    &--heart::before {
+      margin-top: 46px;
+      margin-left: 8px;
+    }
+
+    &--ball::before {
+      margin-top: 23px;
+      margin-left: 2px;
+      margin-bottom: 20px;
+    }
+
+    &--rocket::before {
+      margin-top: 43px;
+      margin-left: -7px;
+      margin-bottom: 29px;
+    }
+
+    &--packaging::before {
+      margin-top: 42px;
+      margin-left: 2px;
+      margin-bottom: 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--flower::before {
+      margin-top: 18px;
+    }
+
+    &--banknote::before {
+      margin-top: 41px;
+      margin-left: 1px;
+      margin-bottom: 28px;
+    }
+
+    &--heart::before {
+      margin-top: 46px;
+      margin-left: 8px;
+    }
+
+    &--ball::before {
+      margin-top: 22px;
+      margin-left: 3px;
+      margin-bottom: 19px;
+    }
+
+    &--rocket::before {
+      margin-top: 44px;
+      margin-left: -6px;
+      margin-bottom: 29px;
+    }
+
+    &--packaging::before {
+      margin-top: 42px;
+      margin-left: 3px;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.about-us__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .about-us__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
   .title-h3();
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__subtitle {
+    .title-h3 (@f-size: 20px; @l-height: 22px;);
+  }
 }
