@@ -1,6 +1,6 @@
 .control-radio {
   display: inline-grid;
-  grid-template-columns: 42px max-content;
+  grid-template-columns: 42px 1fr;
   align-items: center;
   column-gap: 18px;
   cursor: pointer;
@@ -9,6 +9,7 @@
 @media (min-width: @tablet-width) {
   .control-radio {
     column-gap: 35px;
+    align-items: self-start;
   }
 }
 
@@ -20,25 +21,23 @@
 
 .control-radio__custom {
   position: relative;
-  box-sizing: border-box;
-  display: block;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border: 2px solid @c-tundora;
   border-radius: 50%;
 }
 
 @media (min-width: @tablet-width) {
   .control-radio__custom {
-    width: 50px;
-    height: 49px;
+    width: 46px;
+    height: 46px;
   }
 }
 
 .control-input[type="radio"]:checked + .control-radio__custom::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 10px;
   width: 16px;
   height: 16px;
@@ -56,11 +55,20 @@
 }
 
 .control-radio__text {
+  padding-top: 4px;
   .text (@f-size: 17px; @l-height: 18px; @f-weight: 700; @color: @c-black;);
 }
 
 @media (min-width: @tablet-width) {
   .control-radio__text {
+    display: flex;
+    padding-top: 15px;
     .text (@f-size: 19px; @l-height: 18px; @f-weight: 700; @color: @c-black;);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .control-radio__text br {
+    display: none;
   }
 }

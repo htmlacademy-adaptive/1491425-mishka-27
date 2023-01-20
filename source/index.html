@@ -99,18 +99,15 @@
           </tr>
         </tbody>
       </table>
-      <picture>
+      <picture class="product-week__container-image">
         <source media="(min-width: 1150px)" srcset="img/product-week-desktop.jpg" width="525" height="636">
-        <source media="(min-width: 768px)" srcset="img/product-week-tablet.jpg" width="334" height="404">
+        <source class="product-week__image" media="(min-width: 768px)" srcset="img/product-week-tablet.jpg" width="334" height="404">
         <img class="product-week__image" src="img/product-week-mobile.jpg" srcset="img/product-week-mobile.jpg" width="260" height="315" alt="Три корзины, сшитые из пряжи и расположенные друг на друге.">
       </picture>
-      <!-- <img class="product-week__image" width="260" height="315" src="./img/product-week-mobile.jpg" alt="Три корзины, сшитые из пряжи и расположенные друг на друге.">
-      <img class="product-week__image" width="334" height="404" src="./img/product-week-tablet.jpg" alt="Три корзины, сшитые из пряжи и расположенные друг на друге.">
-      <img class="product-week__image" width="525" height="636" src="./img/product-week-desktop.jpg" alt="Три корзины, сшитые из пряжи и расположенные друг на друге."> -->
       <p class="product-week__price">Цена: 990 руб.</p>
       <a class="product-week__button primary-button" href="#">ЗАКАЗАТЬ</a>
     </section>
-<!--     <section class="main-content__about-us about-us">
+    <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
         <li class="about-us__item about-us__item--flower">
@@ -147,7 +144,7 @@
             <cite class="reviews__author">Анастасия Красильникова</cite>
             <span class="reviews__account">@misssssiskras</span>
           </blockquote>
-          <blockquote class="reviews__item slider__item">
+          <!-- <blockquote class="reviews__item slider__item">
             <p class="reviews__text">
               Меня зовут Адель, я&nbsp;заказала на&nbsp;этом сайте себе вязаную игрушку для своего ребенка, которому 2&nbsp;годика.
               Игрушка получилось очень красивой и&nbsp;безопасной. Очнь рекомендую данный сайт родителям, которые хотят заказать
@@ -164,7 +161,7 @@
             </p>
             <cite class="reviews__author">Олег Самойлов</cite>
             <span class="reviews__account">@oleg1999</span>
-          </blockquote>
+          </blockquote> -->
           <button class="reviews__prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв.</span>
           </button>
@@ -178,15 +175,20 @@
     <section class="main-content__contacts contacts">
       <h2 class="contacts__title">Контакты</h2>
       <address class="contacts__organization">
-        <p class="contacts__text">e-mail:</p>
-        <p class="contacts__text">
+        <p class="contacts__text contacts__col-1">e-mail:</p>
+        <p class="contacts__text contacts__col-2">
           <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </p>
-        <p class="contacts__text">адрес:</p>
-        <p class="contacts__text">г. Санкт-Петербург<br> ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
+        <p class="contacts__text contacts__col-1">адрес:</p>
+        <p class="contacts__text contacts__col-2">г. Санкт-Петербург<br> ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
       </address>
+      <picture class="contacts__wrapper">
+        <source media="(min-width: 1150px)" srcset="img/contacts-map-desktop.png" width="527" height="457">
+        <source media="(min-width: 768px)" srcset="img/contacts-map-tablet.png" width="768" height="457">
+        <img class="contacts__map" src="img/header-logo-mobile.png" srcset="img/contacts-map-mobile.png" width="320" height="454" alt="Офис компании по адресу набережная реки Карповки, 5 литера П, Санкт-Петербург.">
+      </picture>
       <a class="contacts__button primary-button" href="#">Напишите нам</a>
-    </section> -->
+    </section>
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo" href="index.html">

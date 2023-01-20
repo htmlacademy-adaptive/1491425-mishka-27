@@ -40,8 +40,8 @@
     display: grid;
     grid-template-columns: 1fr 175px;
     grid-auto-flow: dense;
-    row-gap: 40px;
-    padding-top: 126px;
+    row-gap: 39px;
+    padding-top: 130px;
   }
 }
 
@@ -49,7 +49,7 @@
   .reviews__wrapper {
     padding-top: 132px;
     grid-template-columns: 174px 1fr 175px;
-    row-gap: 35px;
+    row-gap: 36px;
   }
 }
 
@@ -62,7 +62,7 @@
 @media (min-width: @tablet-width) {
   .reviews__title {
     margin-bottom: 0;
-    padding-top: 4px;
+    padding-top: 0;
     grid-column: 1 / 1 span;
     order: -1;
     .title-h2 (@f-size: 43px; @l-height: 50px;);
@@ -139,12 +139,15 @@
 
 @media (min-width: @tablet-width) {
   .reviews__author {
+    margin-bottom: 4px;
+    max-width: 415px;
     .text (@f-size: 18px; @l-height: 24px; @f-weight: 700; @color: @c-black;);
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__author {
+    margin-bottom: 2px;
     .text (@f-size: 17px; @l-height: 24px; @f-weight: 700; @color: @c-black;);
   }
 }
@@ -152,6 +155,12 @@
 .reviews__account {
   display: block;
   .text (@f-size: 17px; @l-height: 30px;);
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__account {
+    max-width: 415px;
+  }
 }
 
 .reviews__prev,
@@ -176,15 +185,17 @@
 @media (min-width: @tablet-width) {
   .reviews__prev,
   .reviews__next {
+    z-index: 2;
     width: 88px;
+    border: none;
   }
 
   .reviews__prev {
-    background-position: left 19px center;
+    background-position: left 20px center;
   }
 
   .reviews__next {
-    background-position: right 18px center;
+    background-position: right 19px center;
   }
 }
 
@@ -199,8 +210,10 @@
 
 @media (min-width: @tablet-width) {
   .reviews__button {
-    max-height: 18px;
-    padding: 15px 0;
+    display: grid;
+    margin-top: -6px;
+    padding: 14px 0;
+    align-self: center;
     grid-column: 2 / 1 span;
     order: -2;
   }
@@ -208,6 +221,7 @@
 
 @media (min-width: @desktop-width) {
   .reviews__button {
+    margin-top: -4px;
     grid-column: 3 / 1 span;
   }
 }
