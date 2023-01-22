@@ -2,6 +2,15 @@
   .primary-btn ();
 }
 
+.primary-button--states:hover {
+  background-color: @c-tundora;
+  color: @white;
+}
+
+.primary-button--states:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: @tablet-width) {
   .primary-button {
     .primary-btn (@f-size: 17px;);

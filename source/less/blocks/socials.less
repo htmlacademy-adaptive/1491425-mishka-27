@@ -26,23 +26,36 @@
   .reset-styles-ul ();
 }
 
-/* .socials__item {
-
-} */
-
 .socials__link {
   display: inline-flex;
 }
 
-/* .socials__link-icon-vkontakte {
-
-}
-
-.socials__link-icon-youtube {
-
-}
-
+.socials__link-icon-vkontakte,
+.socials__link-icon-youtube,
 .socials__link-icon-telegram {
-
+  fill: @bg-thunder;
 }
- */
+
+.socials__link:hover .socials__link-icon-vkontakte,
+.socials__link:hover .socials__link-icon-youtube,
+.socials__link:hover .socials__link-icon-telegram {
+  fill: @bg-hover-2;
+}
+
+.socials__link:active .socials__link-icon-vkontakte,
+.socials__link:active .socials__link-icon-youtube,
+.socials__link:active .socials__link-icon-telegram {
+  opacity: 0.3;
+}
+
+.copyright__icon-html-academy {
+  fill: @downy;
+}
+
+.copyright__icon-html-academy:hover {
+  fill: @bg-hover-2;
+}
+
+.copyright__icon-html-academy:active {
+  opacity: 0.3;
+}

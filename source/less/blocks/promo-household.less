@@ -1,7 +1,3 @@
-/* .promo-household {
-
-} */
-
 @media (min-width: @tablet-width) {
   .promo-household {
     display: grid;
@@ -9,12 +5,26 @@
     grid-auto-flow: dense;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: -10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-household {
+    margin-bottom: -12px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo-household__item:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
   }
 }
 
 @media (min-width: @tablet-width) {
   .promo-household__item {
-    min-height: 119px;
+    min-height: 124px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -22,62 +32,64 @@
 }
 
 @media (min-width: @tablet-width) {
-  .promo-household__item--left-zigzak::after,
-  .promo-household__item--right-zigzak::after {
+  .promo-household__decorative::before {
     content: "";
     position: absolute;
-    bottom: -12px;
+    bottom: -2px;
+    z-index: 2;
     width: 770px;
     min-height: 24px;
     background-image: url("../img/promo-zigzag-tablet.png");
     background-repeat: no-repeat;
   }
-
-  .promo-household__item--left-zigzak::after {
-    right: -2px;
-  }
-
-  .promo-household__item--right-zigzak::after {
-    left: 0;
-  }
-
-  .promo-household__item--left-zigzak {
-    grid-column: 1 / 1 span;
-  }
-
-  .promo-household__item--right-zigzak {
-    grid-column: 2 / 1 span;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .promo-household__item--left-zigzak::after,
-  .promo-household__item--right-zigzak::after {
+  .promo-household__decorative::before {
     content: "";
     position: absolute;
-    bottom: -17px;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    z-index: 2;
     width: 1250px;
     min-height: 34px;
     background-image: url("../img/promo-zigzag-desktop.png");
     background-repeat: no-repeat;
   }
-
-  .promo-household__item--left-zigzak::after {
-    right: -112px;
-  }
-
-  .promo-household__item--right-zigzak::after {
-    left: -12px;
-  }
 }
 
 .promo-household__link {
-  display: block;
+  position: relative;
+  display: flex;
   padding-top: 24px;
   padding-bottom: 31px;
   padding-left: 30px;
-  padding-right: 160px;
+  padding-right: 124px;
   .text (@f-size: 19px; @f-weight: 700; @color: @white;);
+}
+
+@media (min-width: @tablet-width) {
+  .promo-household__link:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo-household__link {
+    padding-top: 27px;
+    padding-bottom: 42px;
+    padding-left: 36px;
+    padding-right: 360px;
+    .text (@f-size: 20px; @l-height: 30px; @f-weight: 700; @color: @white;);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-household__link {
+    padding-right: 360px;
+    padding-bottom: 44px;
+  }
 }
 
 .promo-household__link--lamp {
@@ -88,18 +100,64 @@
   background-color: @bg-fountain-blue;
 }
 
+.promo-household__link--lamp:hover,
+.promo-household__link--lamp:active {
+  background-color: @bg-hover-1;
+}
+
+.promo-household__link--cube:hover,
+.promo-household__link--cube:active {
+  background-color: @bg-hover-2;
+}
+
+.promo-household__icon-lamp {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+}
+
+.promo-household__icon-cube {
+  position: absolute;
+  top: 21px;
+  right: 27px;
+}
+
 @media (min-width: @tablet-width) {
-  .promo-household__link {
-    padding-top: 25px;
-    padding-bottom: 34px;
-    padding-left: 36px;
-    padding-right: 360px;
-    .text (@f-size: 20px; @l-height: 30px; @f-weight: 700; @color: @white;);
+  .promo-household__icon-lamp {
+    top: 30px;
+    right: 99px;
+  }
+
+  .promo-household__icon-cube {
+    top: 32px;
+    right: 96px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .promo-household__link {
-    padding-right: 360px;
+  .promo-household__icon-lamp {
+    top: 32px;
+    right: 36px;
   }
+
+  .promo-household__icon-cube {
+    top: 33px;
+    right: 35px;
+  }
+}
+
+.promo-household__link:hover .promo-household__icon-lamp {
+  opacity: 0.7;
+}
+
+.promo-household__link:hover .promo-household__icon-cube {
+  opacity: 0.7;
+}
+
+.promo-household__link:active .promo-household__icon-lamp {
+  opacity: 0.3;
+}
+
+.promo-household__link:active .promo-household__icon-cube {
+  opacity: 0.3;
 }
