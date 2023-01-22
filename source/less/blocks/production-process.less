@@ -1,4 +1,5 @@
 .production-process {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: dense;
@@ -28,6 +29,14 @@
     grid-template-columns: 682px 1fr;
     grid-template-rows: 38% 62%;
   }
+}
+
+.production-process--bg-state:hover{
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.production-process--bg-state:active{
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .production-process__title {
@@ -79,7 +88,7 @@
     margin: 0;
     margin-bottom: 18px;
     padding: 0;
-    padding-top: 46px;
+    padding-top: 47px;
     padding-right: 59px;
     padding-left: 79px;
     grid-template-columns: 1fr;
@@ -96,27 +105,11 @@
   grid-column: 1 / 2 span;
 }
 
-.production-process__wrapper::after {
-  content: "";
-  position: absolute;
-  top: 37px;
-  left: 79px;
-  width: 100px;
-  height: 77px;
-  background-image: url("../img/production-process-play-mobile.svg");
-  background-repeat: no-repeat;
-}
-
 @media (min-width: @tablet-width) {
   .production-process__wrapper {
     display: grid;
     margin-bottom: 0;
     order: -1;
-  }
-
-  .production-process__wrapper::after {
-    top: 189.5px;
-    left: 284.5px;
   }
 }
 
@@ -126,11 +119,43 @@
     grid-column: 1 / 1 span;
     grid-row: 2 span;
   }
+}
 
-  .production-process__wrapper::after {
-    top: 189.5px;
-    left: 292.5px;
+.production-process__button-play {
+  position: absolute;
+  top: 163px;
+  left: 110px;
+  width: 100px;
+  height: 77px;
+  .reset-styles-btn ();
+  background-image: url("../img/production-process-play-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .production-process__button-play {
+    top: 244px;
+    left: 334px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .production-process__button-play {
+    top: 248px;
+    left: 292px;
+  }
+}
+
+.production-process__button-play:hover,
+.production-process__button-play:focus-visible {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.production-process__button-play:active {
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+  opacity: 0.3;
 }
 
 .production-process__wrapper-bottom {
@@ -184,7 +209,7 @@
 
 @media (min-width: @desktop-width) {
   .production-process__text {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
     padding: 0;
   }
 }

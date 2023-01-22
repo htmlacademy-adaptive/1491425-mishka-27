@@ -28,6 +28,14 @@
   margin-bottom: 22px;
 }
 
+.main-navigation__logo:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__logo:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .main-navigation__logo {
     margin: 0;
@@ -204,12 +212,20 @@
 }
 
 .main-navigation__sale-link {
-  .text (@f-size: 17px; @f-weight: 700; @c-black);
+  .text (@f-size: 17px; @f-weight: 700; @color: @c-black);
+}
+
+.main-navigation__sale-link:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__sale-link:active, .main-navigation__sale-link:focus-visible {
+  opacity: 0.3;
 }
 
 @media (min-width: @desktop-width) {
   .main-navigation__sale-link {
-    .text (@f-size: 15px; @f-weight: 700; @c-black);
+    .text (@f-size: 15px; @f-weight: 700; @color: @c-black);
   }
 }
 

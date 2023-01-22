@@ -156,6 +156,18 @@
   .text (@f-size: 14px; @l-height: 30px;);
 }
 
+.contacts__link:hover {
+  color: @bg-hover-2;
+}
+
+.contacts__link:hover::after {
+  background-color: @bg-hover-2;
+}
+
+.contacts__link:active::after {
+  display: none;
+}
+
 .contacts__link::after {
   content: "";
   position: absolute;
