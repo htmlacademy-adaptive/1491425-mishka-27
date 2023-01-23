@@ -58,14 +58,6 @@
   border-top: 1px solid @bg-gallery;
 }
 
-.navigation-user__link:hover {
-  opacity: 0.6;
-}
-
-.navigation-user__link:active .navigation-user__link:focus-visible {
-  opacity: 0.3;
-}
-
 @media (min-width: @tablet-width) {
   .navigation-user__link {
     display: inline-grid;
@@ -103,6 +95,14 @@
   top: 30px;
   left: 30px;
   opacity: 0.2;
+}
+
+.navigation-user__link:hover .navigation-user__link-text{
+  opacity: 0.6;
+}
+
+.navigation-user__link:active .navigation-user__link-text {
+  opacity: 0.3;
 }
 
 .navigation-user__link:hover .navigation-user__link-icon-search,

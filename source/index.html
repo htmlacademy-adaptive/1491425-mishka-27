@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon-apple.png">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -31,9 +34,6 @@
       <ul class="main-navigation__list navigation-user">
             <li class="navigation-user__item navigation-user__grid-col-1">
               <a class="navigation-user__link navigation-user__link-search" href="#">
-                <!-- <svg class="navigation-user__link-icon-search" width="18" height="18">
-                  <use href="img/icon/sprite.svg#search-icon"></use>
-                </svg> -->
                 <svg class="navigation-user__link-icon-search" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="m17.7 16.06-3.48-3.48a7.63 7.63 0 0 0 1.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 0 0 0 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81ZM2.24 7.88a5.67 5.67 0 0 1 5.63-5.63 5.67 5.67 0 0 1 5.62 5.63 5.67 5.67 0 0 1-5.63 5.62 5.67 5.67 0 0 1-5.62-5.63Z"/>
                 </svg>
@@ -42,9 +42,6 @@
             </li>
             <li class="navigation-user__item navigation-user__grid-col-2">
               <a class="navigation-user__link navigation-user__link-cart" href="#">
-                <!-- <svg class="navigation-user__link-icon-cart" width="21" height="18">
-                  <use href="img/icon/sprite.svg#basket-icon"></use>
-                </svg> -->
                 <svg class="navigation-user__link-icon-cart" aria-hidden="true" focusable="false" width="21" height="18" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z"/>
                 </svg>
@@ -112,11 +109,13 @@
           </tr>
         </tbody>
       </table>
-      <picture class="product-week__container-image">
-        <source media="(min-width: 1150px)" srcset="img/product-week-desktop.jpg" width="525" height="636">
-        <source class="product-week__image" media="(min-width: 768px)" srcset="img/product-week-tablet.jpg" width="334" height="404">
-        <img class="product-week__image" src="img/product-week-mobile.jpg" srcset="img/product-week-mobile.jpg" width="260" height="315" alt="Три корзины, сшитые из пряжи и расположенные друг на друге.">
-      </picture>
+      <div class="product-week__container-image">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/product-week-desktop.jpg 1x, img/product-week-desktop@2x.jpg 2x" width="525" height="636">
+          <source media="(min-width: 768px)" srcset="img/product-week-tablet.jpg 1x, img/product-week-tablet@2x.jpg 2x" width="334" height="404">
+          <img class="product-week__image" src="img/product-week-mobile.jpg" srcset="img/promo-hero-mobile@2x.jpg 2x" width="260" height="315" alt="Три корзины, сшитые из пряжи и расположенные друг на друге.">
+        </picture>
+      </div>
       <p class="product-week__price">Цена: 990 руб.</p>
       <a class="product-week__button primary-button primary-button--states" href="#">ЗАКАЗАТЬ</a>
     </section>
@@ -195,11 +194,13 @@
         <p class="contacts__text contacts__col-1">адрес:</p>
         <p class="contacts__text contacts__col-2">г. Санкт-Петербург<br> ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
       </address>
-      <picture class="contacts__wrapper">
-        <source media="(min-width: 1150px)" srcset="img/contacts-map-desktop.png" width="527" height="457">
-        <source media="(min-width: 768px)" srcset="img/contacts-map-tablet.png" width="768" height="457">
-        <img class="contacts__map" src="img/header-logo-mobile.png" srcset="img/contacts-map-mobile.png" width="320" height="454" alt="Офис компании по адресу набережная реки Карповки, 5 литера П, Санкт-Петербург.">
-      </picture>
+      <div class="contacts__wrapper">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/contacts-map-desktop.png" width="527" height="457">
+          <source media="(min-width: 768px)" srcset="img/contacts-map-tablet.png" width="768" height="457">
+          <img class="contacts__map" src="img/header-logo-mobile.png" srcset="img/contacts-map-mobile.png" width="320" height="454" alt="Офис компании по адресу набережная реки Карповки, 5 литера П, Санкт-Петербург.">
+        </picture>
+      </div>
       <a class="contacts__button primary-button primary-button--states" href="#">Напишите нам</a>
     </section>
   </main>

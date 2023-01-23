@@ -26,12 +26,26 @@
     background-size: 350px;
     background-repeat: no-repeat;
   }
+
+  .reviews--image-bg {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews-bg-tablet@2x.png");
+      background-size: 350px 457px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .reviews--image-bg {
     background-image: url("../img/reviews-bg-desktop.png");
     background-position: left 50px top 54px;
+  }
+
+  .reviews--image-bg {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews-bg-desktop@2x.png");
+      background-size: 350px 457px;
+    }
   }
 }
 

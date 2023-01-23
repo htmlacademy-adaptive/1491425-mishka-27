@@ -19,6 +19,10 @@
   }
 }
 
+.control-radio__input:focus-visible + .control-radio__custom {
+  border: 2px solid #46c1ae;
+}
+
 .control-radio:hover .control-radio__custom {
   border: 2px solid @bg-downy;
 }
@@ -42,7 +46,7 @@
   }
 }
 
-.control-input[type="radio"]:checked + .control-radio__custom::before {
+.control-radio__input[type="radio"]:checked + .control-radio__custom::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -54,7 +58,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .control-input[type="radio"]:checked + .control-radio__custom::before {
+  .control-radio__input[type="radio"]:checked + .control-radio__custom::before {
     top: 12px;
     left: 13px;
     width: 20px;

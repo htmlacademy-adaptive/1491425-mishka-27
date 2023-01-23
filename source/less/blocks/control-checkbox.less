@@ -53,7 +53,7 @@
   }
 }
 
-.control-input[type="checkbox"]:checked + .control-checkbox__custom::before {
+.control-checkbox__input[type="checkbox"]:checked + .control-checkbox__custom::before {
   content: "";
   position: absolute;
   top: 9px;
@@ -66,11 +66,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .control-input[type="checkbox"]:checked + .control-checkbox__custom::before {
+  .control-checkbox__input[type="checkbox"]:checked + .control-checkbox__custom::before {
     top: 14px;
     left: 9px;
     width: 31px;
     height: 22px;
     background-image: url("../img/icon-check-tablet.svg");
   }
+}
+
+.control-checkbox__input:focus-visible + .control-checkbox__custom {
+  border: 2px solid #46c1ae;
 }
