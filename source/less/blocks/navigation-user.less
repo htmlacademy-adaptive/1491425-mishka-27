@@ -135,9 +135,17 @@
   }
 }
 
+.navigation-user__link-text--search + .visually-hidden {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .navigation-user__link-text--search {
     display: none;
+  }
+
+  .navigation-user__link-text--search + .visually-hidden {
+    display: block;
   }
 
   .navigation-user__link-text--cart {
