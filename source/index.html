@@ -158,24 +158,6 @@
             <cite class="reviews__author">Анастасия Красильникова</cite>
             <span class="reviews__account">@misssssiskras</span>
           </blockquote>
-          <!-- <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">
-              Меня зовут Адель, я&nbsp;заказала на&nbsp;этом сайте себе вязаную игрушку для своего ребенка, которому 2&nbsp;годика.
-              Игрушка получилось очень красивой и&nbsp;безопасной. Очнь рекомендую данный сайт родителям, которые хотят заказать
-              своим детям безопасную и&nbsp;экологическую игрушку.
-            </p>
-            <cite class="reviews__author">Адель Барышникова</cite>
-            <span class="reviews__account">@adelbest</span>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">
-              Меня зовут Олег, я&nbsp;давно хотел себе новогодний свитер с&nbsp;Санта-Клаусом в&nbsp;санях и&nbsp;его везут олени.
-              Получилось очень красиво. Когда надеваю на&nbsp;новый год этот свитер, в&nbsp;доме сразу чувствуется атмосфера нового года,
-              как в&nbsp;детстве. Спасибо магазину Мишка, вы&nbsp;супер!
-            </p>
-            <cite class="reviews__author">Олег Самойлов</cite>
-            <span class="reviews__account">@oleg1999</span>
-          </blockquote> -->
           <button class="reviews__prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв.</span>
           </button>
@@ -255,38 +237,42 @@
   </footer>
 
   <!-- Модальное окно -->
-<!--   <div class="modal-container">
-    <div class="modal-container__inner modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form form form-size" action="https://echo.htmlacademy.ru/" method="get">
-        <ul class="form-size__list">
-          <li class="form-size__item">
-            <label class="form-size__label label-size">
-              <span class="visually-hidden">Выбрать размер S.</span>
-              <input class="visually-hidden" type="checkbox" name="size-s" checked>
-              <span class="label-size__item">S</span>
-            </label>
-          </li>
-          <li class="form-size__item">
-            <label class="form-size__label label-size">
-              <span class="visually-hidden">Выбрать размер M.</span>
-              <input class="visually-hidden" type="checkbox" name="size-m">
-              <span class="label-size__item">M</span>
-            </label>
-          </li>
-          <li class="form-size__item">
-            <label class="form-size__label label-size">
-              <span class="visually-hidden">Выбрать размер L.</span>
-              <input class="visually-hidden" type="checkbox" name="size-l">
-              <span class="label-size__item">L</span>
-            </label>
-          </li>
-        </ul>
-        <button class="form-size__button secondary-button" type="submit">Добавить</button>
+  <div class="modal-catalog modal-catalog--hidden">
+    <div class="modal-catalog__inner">
+      <h2 class="modal-catalog__title">Добавить<br> в корзину</h2>
+      <form class="modal-catalog__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="modal-catalog__fieldset">
+          <legend class="modal-catalog__legend">Выберите размер:</legend>
+          <ul class="modal-catalog__list size-list">
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <span class="visually-hidden">Выбрать размер S.</span>
+                <input class="visually-hidden" type="checkbox" name="size" value="Small" checked>
+                <span class="size-list__marker">S</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <span class="visually-hidden">Выбрать размер M.</span>
+                <input class="visually-hidden" type="checkbox" name="size" value="Medium">
+                <span class="size-list__marker">M</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <span class="visually-hidden">Выбрать размер L.</span>
+                <input class="visually-hidden" type="checkbox" name="size" value="Large">
+                <span class="size-list__marker">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal-catalog__button secondary-button" type="submit">Добавить</button>
       </form>
     </div>
-  </div> -->
+  </div>
+
+
 <script src="js/slider.js"></script>
 </body>
 </html>

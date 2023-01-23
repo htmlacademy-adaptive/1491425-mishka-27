@@ -197,5 +197,41 @@
     </section>
   </footer>
   <script src="js/slider.js"></script>
+
+  <!-- Модальное окно -->
+  <div class="modal-catalog modal-catalog--hidden">
+    <div class="modal-catalog__inner">
+      <h2 class="modal-catalog__title">Добавить<br> в корзину</h2>
+      <form class="modal-catalog__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="modal-catalog__fieldset">
+          <legend class="modal-catalog__legend">Выберите размер:</legend>
+          <ul class="modal-catalog__list size-list">
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <span class="visually-hidden">Выбрать размер S.</span>
+                <input class="visually-hidden" type="checkbox" name="size" value="Small" checked>
+                <span class="size-list__marker">S</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <span class="visually-hidden">Выбрать размер M.</span>
+                <input class="visually-hidden" type="checkbox" name="size" value="Medium">
+                <span class="size-list__marker">M</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <span class="visually-hidden">Выбрать размер L.</span>
+                <input class="visually-hidden" type="checkbox" name="size" value="Large">
+                <span class="size-list__marker">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal-catalog__button secondary-button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
