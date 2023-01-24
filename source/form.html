@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Сделать заказ</title>
 </head>
+
 <body class="page__body">
   <header class="main-header">
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <a class="main-navigation__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg" width="149" height="72">
-            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="113" height="46">
-            <img class="main-navigation__logo-image" src="img/header-logo-mobile.svg" srcset="img/header-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка.">
-          </picture>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="113" height="46">
+          <img class="main-navigation__logo-image" src="img/header-logo-mobile.svg" srcset="img/header-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка.">
+        </picture>
       </a>
       <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
       <ul class="main-navigation__list navigation-site">
-            <li class="navigation-site__item navigation-site__grid-col-1">
-              <a class="navigation-site__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="navigation-site__item navigation-site__grid-col-2">
-              <a class="navigation-site__link" href="form.html">Вязание на заказ</a>
-            </li>
+        <li class="navigation-site__item navigation-site__grid-col-1">
+          <a class="navigation-site__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="navigation-site__item navigation-site__grid-col-2">
+          <a class="navigation-site__link" href="form.html">Вязание на заказ</a>
+        </li>
       </ul>
       <ul class="main-navigation__list navigation-user">
-            <li class="navigation-user__item navigation-user__grid-col-1">
-              <a class="navigation-user__link navigation-user__link-search" href="#">
-                <svg class="navigation-user__link-icon-search" width="18" height="18">
-                  <use href="img/sprite.svg#icon-search"></use>
-                </svg>
-                <span class="navigation-user__link-text navigation-user__link-text--search">Поиск по сайту</span>
-                <span class="visually-hidden">Поиск по сайту Мишка.</span>
-              </a>
-            </li>
-            <li class="navigation-user__item navigation-user__grid-col-2">
-              <a class="navigation-user__link navigation-user__link-cart" href="#">
-                <svg class="navigation-user__link-icon-cart" width="21" height="18">
-                  <use href="img/sprite.svg#icon-cart"></use>
-                </svg>
-                <span class="navigation-user__link-text navigation-user__link-text--cart">Корзина: пока пуста</span>
-              </a>
-            </li>
+        <li class="navigation-user__item navigation-user__grid-col-1">
+          <a class="navigation-user__link navigation-user__link-search" href="#">
+            <svg class="navigation-user__link-icon-search" width="18" height="18">
+              <use href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <span class="navigation-user__link-text navigation-user__link-text--search">Поиск по сайту</span>
+            <span class="visually-hidden">Поиск по сайту Мишка.</span>
+          </a>
+        </li>
+        <li class="navigation-user__item navigation-user__grid-col-2">
+          <a class="navigation-user__link navigation-user__link-cart" href="#">
+            <svg class="navigation-user__link-icon-cart" width="21" height="18">
+              <use href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="navigation-user__link-text navigation-user__link-text--cart">Корзина: пока пуста</span>
+          </a>
+        </li>
       </ul>
       <div class="main-navigation__sale">
-          <ul class="main-navigation__sale-list">
-            <li class="main-navigation__sale-item">
-              <a class="main-navigation__sale-link" href="#">Новые поступления</a>
-            </li>
-            <li class="main-navigation__sale-item">
-              <a class="main-navigation__sale-link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p class="main-navigation__sale-text">Бесплатная доставка по&nbsp;России</p>
+        <ul class="main-navigation__sale-list">
+          <li class="main-navigation__sale-item">
+            <a class="main-navigation__sale-link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-navigation__sale-item">
+            <a class="main-navigation__sale-link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="main-navigation__sale-text">Бесплатная доставка по&nbsp;России</p>
       </div>
     </nav>
   </header>
@@ -71,9 +73,9 @@
         <ul class="form-filters__list form-filters__list-radio">
           <li class="form-filters__item">
             <label class="control-radio">
-              <input class="visually-hidden control-radio__input" type="radio" name="type-interior" value="interior-accessory" checked>
+              <input class="visually-hidden control-radio__input" type="radio" name="type-interior" value="interior-accessory" checked="checked">
               <span class="control-radio__custom"></span>
-              <span class="control-radio__text">Аксессуар для<br> интерьера</span>
+              <span class="control-radio__text">Аксессуар для<br>интерьера</span>
             </label>
           </li>
           <li class="form-filters__item">
@@ -90,14 +92,14 @@
         <ul class="form-filters__list form-filters__list-checkbox">
           <li class="form-filters__item">
             <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-white" checked>
+              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-white" checked="checked">
               <span class="control-checkbox__custom"></span>
               <span class="control-checkbox__text">Белый</span>
             </label>
           </li>
           <li class="form-filters__item">
             <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-gray" checked>
+              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-gray" checked="checked">
               <span class="control-checkbox__custom"></span>
               <span class="control-checkbox__text">Серый</span>
             </label>
@@ -181,7 +183,7 @@
   <footer class="main-footer">
     <a class="main-footer__logo" href="index.html">
       <svg class="main-footer__logo-icon" width="102" height="34">
-        <use href="img/sprite.svg#footer-icon-logo"></use>
+        <use href="img/sprite.svg#icon-footer-logo"></use>
       </svg>
       <span class="visually-hidden">Перейти на главную страницу сайта Мишка.</span>
     </a>
@@ -189,7 +191,7 @@
       <h2 class="visually-hidden">Социальные сети HTML Academy.</h2>
       <ul class="socials__list">
         <li class="socials__item">
-          <a class="socials__link"  href="https://vk.com/htmlacademy">
+          <a class="socials__link" href="https://vk.com/htmlacademy">
             <svg class="socials__link-icon-vkontakte" width="28" height="23">
               <use href="img/sprite.svg#icon-vk"></use>
             </svg>
@@ -197,7 +199,7 @@
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link"  href="https://www.youtube.com/user/htmlacademyru">
+          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
             <svg class="socials__link-icon-youtube" width="28" height="23">
               <use href="img/sprite.svg#icon-youtube"></use>
             </svg>
@@ -205,7 +207,7 @@
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link"  href="https://t.me/htmlacademy">
+          <a class="socials__link" href="https://t.me/htmlacademy">
             <svg class="socials__link-icon-telegram" width="28" height="23">
               <use href="img/sprite.svg#icon-tg"></use>
             </svg>
@@ -215,8 +217,7 @@
       </ul>
     </section>
     <section class="copyright">
-      <h2 class="visually-hidden">Ссылка на сайт HTML Academy.</h2>
-      <b class="copyright__text">Разработано</b>
+      <h2 class="visually-hidden">Ссылка на сайт HTML Academy.</h2><b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__icon-html-academy" width="27" height="35">
           <use href="img/sprite.svg#icon-html-academy"></use>
@@ -227,4 +228,5 @@
   </footer>
   <script src="js/slider.js"></script>
 </body>
+
 </html>
