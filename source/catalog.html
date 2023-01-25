@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/open-sans-bold.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.min.css">
@@ -135,7 +139,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/production-process-video-desktop.jpg, img/production-process-video-desktop@2x.jpg 2x" width="682" height="455">
           <source media="(min-width: 768px)" srcset="img/production-process-video-tablet.jpg, img/production-process-video-tablet@2x.jpg 2x" width="668" height="455">-
-          <img class="production-process__img" src="img/production-process-video-mobile.jpg" srcset="img/production-process-video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс создания продуктов магазина Мишка.">
+          <img class="production-process__img" src="img/production-process-video-mobile.jpg" loading="lazy" srcset="img/production-process-video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс создания продуктов магазина Мишка.">
         </picture>
       </div>
       <button class="production-process__button-play" type="button">

@@ -8,6 +8,10 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon-apple.png">
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-bold.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -175,7 +179,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/contacts-map-desktop.jpg" width="527" height="457">
           <source media="(min-width: 768px)" srcset="img/contacts-map-tablet.jpg" width="768" height="457">
-          <img class="contacts__map" src="img/header-logo-mobile.jpg" srcset="img/contacts-map-mobile.jpg" width="320" height="454" alt="Офис компании по адресу набережная реки Карповки, 5 литера П, Санкт-Петербург.">
+          <img class="contacts__map" src="img/header-logo-mobile.jpg" loading="lazy" srcset="img/contacts-map-mobile.jpg" width="320" height="454" alt="Офис компании по адресу набережная реки Карповки, 5 литера П, Санкт-Петербург.">
         </picture>
       </div><a class="contacts__button primary-button primary-button--states" href="#">Напишите нам</a>
     </section>
@@ -258,7 +262,7 @@
       </form>
     </div>
   </div>
-<!--   <script src="js/slider.js"></script> -->
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
