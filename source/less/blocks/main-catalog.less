@@ -19,9 +19,9 @@
     width: 1150px;
     box-sizing: border-box;
     margin-bottom: 61px;
-    padding-top: 58px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -30,6 +30,7 @@
   margin-bottom: 73px;
   .title-h1();
   text-align: center;
+  background-color: @bg-seashell;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,7 +42,9 @@
 
 @media (min-width: @desktop-width) {
   .main-catalog__title {
-    margin-bottom: 224px;
+    margin-bottom: 0;
+    padding-top: 58px;
+    padding-bottom: 94px;
     .title-h1 (@f-size: 53px; @l-height: 57px;);
   }
 }
