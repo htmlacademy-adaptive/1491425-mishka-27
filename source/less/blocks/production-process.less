@@ -14,7 +14,7 @@
     margin: 0;
     margin-top: -1px;
     padding: 0 50px;
-    padding-top: 50px;
+    padding-top: 28px;
     padding-bottom: 52px;
     background-color: @white;
     border: none;
@@ -23,8 +23,11 @@
 
 @media (min-width: @desktop-width) {
   .production-process {
-    margin-bottom: 44px;
+    margin-bottom: 0;
     padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 44px;
     grid-template-columns: 682px 1fr;
     grid-template-rows: 38% 62%;
   }
@@ -43,7 +46,7 @@
   margin: 0;
   padding: 0 33px;
   padding-top: 21px;
-  padding-bottom: 26px;
+  padding-bottom: 4px;
   grid-template-columns: 32px 1fr;
   grid-column: 1 / 2 span;
   align-items: center;
@@ -67,10 +70,6 @@
     border-right: 1px solid @bg-gallery;
     border-top: 1px solid @bg-gallery;
   }
-
-  .production-process__title br {
-    display: none;
-  }
 }
 
 .production-process__title::before {
@@ -84,21 +83,17 @@
 
 @media (min-width: @desktop-width) {
   .production-process__title {
-    margin: 0;
-    margin-bottom: 18px;
-    padding: 0;
-    padding-top: 47px;
-    padding-right: 59px;
+    margin-top: 22px;
+    margin-bottom: 0;
+    padding-top: 46px;
     padding-left: 79px;
+    padding-right: 50px;
+    padding-bottom: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / 1 span;
     align-self: flex-start;
     row-gap: 2px;
-  }
-
-  .production-process__title br {
-    display: block;
   }
 }
 
@@ -126,7 +121,7 @@
 
 .production-process__button-play {
   position: absolute;
-  top: 163px;
+  top: 159px;
   left: 110px;
   width: 100px;
   height: 77px;
@@ -144,8 +139,8 @@
 
 @media (min-width: @desktop-width) {
   .production-process__button-play {
-    top: 190px;
-    left: 292px;
+    top: 212px;
+    left: 342px;
   }
 }
 
@@ -184,6 +179,8 @@
   .production-process__wrapper-bottom {
     display: grid;
     padding: 0;
+    padding-top: 13px;
+    padding-right: 50px;
     padding-left: 80px;
     grid-column: 2 / 1 span;
     grid-template-rows: repeat(2, max-content);
@@ -212,7 +209,7 @@
 
 @media (min-width: @desktop-width) {
   .production-process__text {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
     padding: 0;
   }
 }
