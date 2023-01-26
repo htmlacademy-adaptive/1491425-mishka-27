@@ -1,8 +1,21 @@
 .product-week {
+  position: relative;
   box-sizing: border-box;
   padding-top: 31px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.product-week--decor-zigzag::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/icon-zigzag-mobile.svg");
+  fill: black;
 }
 
 @media (min-width: @tablet-width) {
