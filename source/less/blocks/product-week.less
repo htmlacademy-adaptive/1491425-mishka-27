@@ -33,7 +33,7 @@
   .product-week--decor-zigzag::after {
     content: "";
     position: absolute;
-    bottom: -42px;
+    bottom: -69px;
     left: 0;
     right: 0;
     width: 770px;
@@ -47,6 +47,19 @@
   .product-week {
     grid-template-columns: 164px minmax(min-content, 282px) 1fr;
     column-gap: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-week--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -96px;
+    left: 50px;
+    width: 1050px;
+    height: 23px;
+    background-image: url("../img/icon-zigzag-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 

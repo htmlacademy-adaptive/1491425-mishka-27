@@ -30,7 +30,7 @@
   .reviews--decor-zigzag::after {
     content: "";
     position: absolute;
-    bottom: -51px;
+    bottom: -85px;
     left: 0;
     right: 0;
     width: 770px;
@@ -43,6 +43,19 @@
 @media (min-width: @desktop-width) {
   .reviews {
     padding-bottom: 97px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -91px;
+    left: 50px;
+    width: 1050px;
+    height: 23px;
+    background-image: url("../img/icon-zigzag-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
