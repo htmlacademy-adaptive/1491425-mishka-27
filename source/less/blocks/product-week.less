@@ -20,12 +20,27 @@
 
 @media (min-width: @tablet-width) {
   .product-week {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
     padding-top: 52px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product-week--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    right: 0;
+    width: 770px;
+    height: 17px;
+    background-image: url("../img/icon-zigzag-tablet.svg");
+    background-repeat: no-repeat;
   }
 }
 

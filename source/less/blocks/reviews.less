@@ -1,7 +1,20 @@
 .reviews {
+  position: relative;
   padding-top: 45px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.reviews--decor-zigzag::after {
+  content: "";
+  position: absolute;
+  bottom: -51px;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/icon-zigzag-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -10,6 +23,20 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 49px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -51px;
+    left: 0;
+    right: 0;
+    width: 770px;
+    height: 17px;
+    background-image: url("../img/icon-zigzag-tablet.svg");
+    background-repeat: no-repeat;
   }
 }
 
