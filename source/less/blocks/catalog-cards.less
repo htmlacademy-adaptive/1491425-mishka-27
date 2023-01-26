@@ -33,6 +33,20 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .catalog-cards--decor-wave::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 770px;
+    height: 24px;
+    background-image: url("../img/icon-wave-desktop.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .catalog-cards__list {
   .reset-styles-ul ();
   padding: 0 30px;
