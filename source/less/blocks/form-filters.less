@@ -503,6 +503,7 @@
 .form-filters__input--field-surname:active,
 .form-filters__input--field-patronymic:active {
   box-shadow: inset 0 -2px 0 @bg-downy;
+  opacity: 0.5;
 }
 
 .form-filters__input--field-name:focus-visible,
@@ -573,6 +574,11 @@
 .form-filters__wrapper-tel:hover .form-filters__icon-phone {
   fill: @bg-downy;
   opacity: 1;
+}
+
+.form-filters__input--field-tel:active {
+  box-shadow: inset 0 -2px 0 @bg-downy;
+  opacity: 0.5;
 }
 
 .form-filters__input--field-tel:focus-visible {
@@ -667,11 +673,11 @@
   }
 }
 
-.form-filters__wrapper-mail:hover .form-filters__input--field-mail {
+.form-filters__input--field-mail:hover {
   box-shadow: inset 0 -2px 0 @bg-downy;
 }
 
-.form-filters__wrapper-mail:hover .form-filters__icon-mail {
+.form-filters__input--field-mail:hover + .form-filters__icon-mail {
   fill: @bg-downy;
   opacity: 1;
 }
@@ -685,6 +691,11 @@
   .form-filters__input::placeholder {
     .text (@f-size: 19px; @l-height: 18px; @color: @c-black;);
   }
+}
+
+.form-filters__input--field-mail:active {
+  box-shadow: inset 0 -2px 0 @bg-downy;
+  opacity: 0.5;
 }
 
 .form-filters__input--field-mail:focus-visible {
@@ -723,7 +734,12 @@
   border: 2px solid @bg-downy;
 }
 
-.form-filters__textarea--field-additionally:active,
+.form-filters__textarea--field-additionally:active {
+  outline: 2px solid @bg-downy;
+  outline-offset: -2px;
+  opacity: 0.5;
+}
+
 .form-filters__textarea--field-additionally:focus-visible {
   outline: 2px solid @bg-downy;
   outline-offset: -2px;
