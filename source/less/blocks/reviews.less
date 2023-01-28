@@ -105,9 +105,9 @@
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
-    padding-top: 132px;
     grid-template-columns: 174px 1fr 175px;
     row-gap: 36px;
+    padding-top: 132px;
   }
 }
 
@@ -137,10 +137,10 @@
 
 .reviews__list {
   display: grid;
-  margin-bottom: 38px;
   grid-template-columns: repeat(2, 130px);
   grid-column: 1 / 2 span;
   justify-content: space-between;
+  margin-bottom: 38px;
 }
 
 @media (min-width: @tablet-width) {
@@ -248,6 +248,13 @@
 .reviews__prev:active,
 .reviews__next:active {
   opacity: 0.3;
+}
+
+.reviews__prev:disabled,
+.reviews__next:disabled {
+  opacity: 0.1;
+  background-color: @bg-whisper;
+  cursor: default;
 }
 
 @media (min-width: @tablet-width) {

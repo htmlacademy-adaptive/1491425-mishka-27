@@ -7,7 +7,7 @@
 @media (min-width: @tablet-width) {
   .main-navigation {
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 370px 1fr;
     grid-auto-flow: dense;
   }
 }
@@ -24,6 +24,12 @@
   margin: 0 auto;
   padding-top: 22px;
   margin-bottom: 22px;
+}
+
+.main-navigation__logo:focus-visible {
+  outline: 2px solid @c-black;
+  outline-offset: -2px;
+  border-radius: 10px;
 }
 
 .main-navigation__logo:hover {
@@ -190,13 +196,18 @@
   .main-navigation__sale {
     display: grid;
     padding: 0 50px;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     grid-auto-flow: dense;
     grid-column: 1 / 3 span;
     justify-self: auto;
-
+    order: 4;
+    background-color: @bg-snow;
     border-top: 1px solid @bg-gainsboro;
+  }
+
+  .main-navigation__sale--bg-seconadary {
+    background-color: @bg-seashell;
   }
 }
 
@@ -209,9 +220,9 @@
   .main-navigation__sale-list {
     display: grid;
     padding-top: 19px;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: 200px 200px;
     grid-column: 1 / 1 span;
-    column-gap: 62px;
+    column-gap: 20px;
   }
 }
 

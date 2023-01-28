@@ -24,10 +24,11 @@
 @media (min-width: @desktop-width) {
   .navigation-site {
     padding-top: 0;
-    column-gap: 0;
+    grid-template-columns: 185px 190px;
     grid-column: 1 / 1 span;
+    column-gap: 35px;
     order: 1;
-
+    background-color: @white;
     border-top: none;
   }
 }
@@ -36,14 +37,6 @@
   .navigation-site__item {
     padding-top: 20px;
   }
-
-  .navigation-site__grid-col-1 {
-    grid-column: 1 / 1 span;
-  }
-
-  .navigation-site__grid-col-2 {
-    grid-column: 2 / 1 span;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -51,21 +44,8 @@
     padding-top: 33px;
   }
 
-  .navigation-site__item:not(:last-child) {
-    margin-right: 35px;
-  }
-
-  .navigation-site__item:not(:first-child) {
-    border-left: 1px solid @bg-whisper;
-  }
-
-  .navigation-site__grid-col-1 {
-    grid-column: 1 / 1 span;
-  }
-
-  .navigation-site__grid-col-2 {
-    grid-column: 2 / 1 span;
-    padding-left: 35px;
+  .navigation-site__item:not(:nth-child(even)) {
+    border-right: 1px solid @bg-whisper;
   }
 }
 

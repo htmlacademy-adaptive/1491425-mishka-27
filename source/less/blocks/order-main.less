@@ -15,27 +15,28 @@
 }
 
 @media (min-width: @tablet-width) {
-  .order-main--decor-wave::after {
+  .order-main__title--decor-wave::after {
     content: "";
     position: absolute;
-    left: 44px;
+    left: 0;
+    right: 0;
     bottom: 299px;
-    width: 768px;
+    width: 100%;
     height: 24px;
     background-image: url("../img/icon-wave-tablet.svg");
     background-repeat: no-repeat;
+    background-position: center bottom;
   }
 }
 
 @media (min-width: @desktop-width) {
   .order-main {
     width: 1150px;
-    padding-bottom: 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .order-main--decor-wave::after {
+  .order-main__title--decor-wave::after {
     content: "";
     position: absolute;
     left: 0;
@@ -69,9 +70,9 @@
 @media (min-width: @desktop-width) {
   .order-main__title {
     position: relative;
-    margin-top: -100px;
-    padding-top: 101px;
-    padding-bottom: 96px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 97px;
     background-color: @bg-seashell;
     .title-h1 (@f-size: 53px; @l-height: 57px;);
   }

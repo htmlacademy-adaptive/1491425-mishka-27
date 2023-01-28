@@ -5,7 +5,7 @@
   min-height: 160px;
   margin: 0 auto;
   padding: 0 30px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 22px;
   background-color: @bg-seashell;
   box-sizing: border-box;
@@ -50,13 +50,17 @@
 
 @media (min-width: @tablet-width) {
   .main-footer__logo {
-    display: block;
+    display: flex;
+    margin-bottom: 8px;
     grid-column: 1 / 1 span;
   }
 }
 
 @media (min-width: @desktop-width) {
-  margin-bottom: 2px;
+  .main-footer__logo {
+    margin-bottom: 8px;
+    margin-left: 1px;
+  }
 }
 
 .main-footer__logo-icon {

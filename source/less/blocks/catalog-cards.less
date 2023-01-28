@@ -26,10 +26,10 @@
 
 @media (min-width: @desktop-width) {
   .catalog-cards {
-    padding-top: 127px;
+    padding-top: 129px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 36px;
+    padding-bottom: 38px;
   }
 }
 
@@ -37,7 +37,7 @@
   .catalog-cards--decor-wave::before {
     content: "";
     position: absolute;
-    top: -17px;
+    top: -16px;
     left: 0;
     right: 0;
     width: 1150px;
@@ -62,10 +62,10 @@
 @media (min-width: @desktop-width) {
   .catalog-cards__list {
     display: grid;
-    grid-template-columns: 316px 315px 316px;
-    grid-auto-flow: dense;
-    column-gap: 51px;
     padding: 0;
+    grid-template-columns: 316px 316px 316px;
+    grid-auto-flow: dense;
+    justify-content: space-between;
   }
 }
 
@@ -76,8 +76,8 @@
 @media (min-width: @tablet-width) {
   .catalog-cards__item {
     display: grid;
-    grid-template-columns: 334px 1fr;
     padding-top: 48px;
+    grid-template-columns: 334px 1fr;
   }
 
   .catalog-cards__item:not(:last-child) {
@@ -87,10 +87,10 @@
 
 @media (min-width: @desktop-width) {
   .catalog-cards__item {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, max-content);
     margin: 0;
     padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
   }
 
   .catalog-cards__item:not(:last-child) {
