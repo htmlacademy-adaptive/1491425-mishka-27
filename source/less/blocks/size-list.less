@@ -6,6 +6,24 @@
   row-gap: 10px;
 }
 
+.size-list__control input[type="checkbox"]:hover + .size-list__marker {
+  opacity: 0.8;
+}
+
+.size-list__control input[type="checkbox"]:active + .size-list__marker {
+  opacity: 0.5;
+}
+
+.size-list__control input[type="checkbox"]:focus-visible + .size-list__marker {
+  border: 2px solid @bg-hover-2;
+}
+
+.size-list__control input[type="checkbox"]:disabled + .size-list__marker {
+  border: none;
+  opacity: 0.2;
+  cursor: default;
+}
+
 input[type="checkbox"]:checked + .size-list__marker {
   border: 2px solid @downy;
 }
