@@ -1,8 +1,21 @@
 .product-week {
+  position: relative;
   box-sizing: border-box;
   padding-top: 31px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.product-week--decor-zigzag::after {
+  content: "";
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/icon-zigzag-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,10 +29,37 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .product-week--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -69px;
+    left: 0;
+    right: 0;
+    width: 770px;
+    height: 17px;
+    background-image: url("../img/icon-zigzag-tablet.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .product-week {
     grid-template-columns: 164px minmax(min-content, 282px) 1fr;
     column-gap: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-week--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -96px;
+    left: 50px;
+    width: 1050px;
+    height: 23px;
+    background-image: url("../img/icon-zigzag-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -39,6 +79,8 @@
 
 @media (min-width: @desktop-width) {
   .product-week__title {
+    z-index: 1;
+    position: relative;
     margin-bottom: 36px;
     padding-top: 80px;
     grid-column: 2 / 2 span;
@@ -186,18 +228,17 @@
     margin-top: 12px;
     grid-column: 2 / 2 span;
     grid-row: 4 span;
-    justify-self: end;
+    justify-self: flex-end;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product-week__container-image {
-    z-index: -1;
     display: block;
     margin-top: -154px;
     grid-column: 3 / 1 span;
     grid-row: 5 span;
-    justify-self: end;
+    justify-self: flex-end;
   }
 }
 

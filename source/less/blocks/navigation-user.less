@@ -7,16 +7,12 @@
   .navigation-user {
     display: grid;
     width: max-content;
-    margin-bottom: -1px;
+    margin-bottom: 0;
     padding-right: 50px;
-    justify-self: end;
+    justify-self: flex-end;
     grid-template-columns: 84px 264px;
-    grid-template-rows: 88px;
     grid-column: 2 / 1 span;
-    grid-auto-rows: 88px;
     grid-auto-flow: dense;
-    background-color: @white;
-    border-bottom: 1px solid @bg-gainsboro;
   }
 }
 
@@ -77,10 +73,16 @@
 
   .navigation-user__link-cart {
     grid-template-columns: max-content 1fr;
-    justify-self: end;
+    justify-self: flex-end;
     align-items: center;
     column-gap: 31px;
   }
+}
+
+.navigation-user__link-search:focus-visible {
+  outline: 2px solid @c-black;
+  outline-offset: -2px;
+  border-radius: 10px;
 }
 
 .navigation-user__link-icon-search {

@@ -39,9 +39,9 @@
 .catalog-card__cell-2,
 .catalog-card__cell-3 {
   display: grid;
+  padding: 27px 26px 25px 27px;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: dense;
-  padding: 27px 26px 25px 27px;
 }
 
 .catalog-card__cell-1 {
@@ -229,7 +229,7 @@
 
 .catalog-card__button {
   display: grid;
-  justify-self: end;
+  justify-self: flex-end;
   grid-column: 2 / 1 span;
   order: 3;
   .reset-styles-btn ();
@@ -239,6 +239,12 @@
   margin-top: -1px;
   fill: @c-black;
   opacity: 0.2;
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-card__icon-cart {
+    margin-top: 0;
+  }
 }
 
 .catalog-card__icon-cart:hover {

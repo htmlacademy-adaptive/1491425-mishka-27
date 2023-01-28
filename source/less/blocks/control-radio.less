@@ -78,3 +78,13 @@
     .text (@f-size: 19px; @l-height: 18px; @f-weight: 700; @color: @c-black;);
   }
 }
+
+.control-radio__input:disabled + .control-radio__custom {
+  border: none;
+  cursor: default;
+}
+
+.control-radio__input:disabled ~ .control-radio__text {
+  color: @white;
+  cursor: default;
+}

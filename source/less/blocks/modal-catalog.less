@@ -91,3 +91,18 @@
 .modal-catalog__list:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.size-list__control input[type="checkbox"]:focus-visible + .size-list__marker {
+  border: 2px solid @bg-hover-2;
+}
+
+.size-list__control input[type="checkbox"]:disabled + .size-list__marker {
+  border: none;
+  opacity: 0.2;
+  cursor: default;
+}
+
+.modal-catalog__button:disabled {
+  opacity: 0.2;
+  cursor: default;
+}

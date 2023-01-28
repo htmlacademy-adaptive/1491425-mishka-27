@@ -76,5 +76,19 @@
 }
 
 .control-checkbox__input:focus-visible + .control-checkbox__custom {
-  border: 2px solid #46c1ae;
+  border: 2px solid @bg-hover-2;
+}
+
+.control-checkbox__input:disabled + .control-checkbox__custom {
+  border: none;
+  cursor: default;
+}
+
+.control-checkbox__input:disabled ~ .control-checkbox__text {
+  color: @white;
+  cursor: default;
+}
+
+.control-checkbox__input:disabled + .control-checkbox__custom::before {
+  opacity: 0;
 }

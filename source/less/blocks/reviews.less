@@ -1,7 +1,20 @@
 .reviews {
+  position: relative;
   padding-top: 45px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.reviews--decor-zigzag::after {
+  content: "";
+  position: absolute;
+  bottom: -51px;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/icon-zigzag-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,9 +26,36 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .reviews--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -85px;
+    left: 0;
+    right: 0;
+    width: 770px;
+    height: 17px;
+    background-image: url("../img/icon-zigzag-tablet.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .reviews {
     padding-bottom: 97px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews--decor-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -91px;
+    left: 50px;
+    width: 1050px;
+    height: 23px;
+    background-image: url("../img/icon-zigzag-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -65,9 +105,9 @@
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
-    padding-top: 132px;
     grid-template-columns: 174px 1fr 175px;
     row-gap: 36px;
+    padding-top: 132px;
   }
 }
 
@@ -97,17 +137,17 @@
 
 .reviews__list {
   display: grid;
-  margin-bottom: 38px;
   grid-template-columns: repeat(2, 130px);
   grid-column: 1 / 2 span;
   justify-content: space-between;
+  margin-bottom: 38px;
 }
 
 @media (min-width: @tablet-width) {
   .reviews__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
     margin-bottom: 0;
   }
 }
@@ -208,6 +248,13 @@
 .reviews__prev:active,
 .reviews__next:active {
   opacity: 0.3;
+}
+
+.reviews__prev:disabled,
+.reviews__next:disabled {
+  opacity: 0.1;
+  background-color: @bg-whisper;
+  cursor: default;
 }
 
 @media (min-width: @tablet-width) {

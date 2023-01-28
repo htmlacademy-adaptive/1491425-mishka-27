@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,21 +13,20 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Сделать заказ</title>
 </head>
-
 <body class="page__body">
   <header class="main-header">
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <a class="main-navigation__logo" href="index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg" width="149" height="72">
-          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="113" height="46">
+          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="114" height="46">
           <img class="main-navigation__logo-image" src="img/header-logo-mobile.svg" srcset="img/header-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка.">
         </picture>
       </a>
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <ul class="main-navigation__list navigation-site">
+      <ul class="main-navigation__list navigation-site navigation-site--bg-seconadary">
         <li class="navigation-site__item navigation-site__grid-col-1">
           <a class="navigation-site__link" href="catalog.html">Каталог товаров</a>
         </li>
@@ -55,7 +53,7 @@
           </a>
         </li>
       </ul>
-      <div class="main-navigation__sale">
+      <div class="main-navigation__sale main-navigation__sale--bg-seconadary">
         <ul class="main-navigation__sale-list">
           <li class="main-navigation__sale-item">
             <a class="main-navigation__sale-link" href="#">Новые поступления</a>
@@ -69,11 +67,11 @@
     </nav>
   </header>
   <main class="order-main">
-    <h1 class="order-main__title">Вязание на заказ</h1>
+    <h1 class="order-main__title order-main__title--decor-wave">Вязание на заказ</h1>
     <p class="order-main__text">Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
     <form class="order-main__form form-filters" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form-filters__wrapper form-filters__radio">
-        <h3 class="form-filters__title form-filters__title--radio">Тип</h3>
+        <h2 class="form-filters__title form-filters__title--radio">Тип</h2>
         <ul class="form-filters__list form-filters__list-radio">
           <li class="form-filters__item">
             <label class="control-radio">
@@ -92,7 +90,7 @@
         </ul>
       </div>
       <div class="form-filters__wrapper form-filters__checkbox">
-        <h3 class="form-filters__title form-filters__title--checkbox">Цвет</h3>
+        <h2 class="form-filters__title form-filters__title--checkbox">Цвет</h2>
         <ul class="form-filters__list form-filters__list-checkbox">
           <li class="form-filters__item">
             <label class="control-checkbox">
@@ -139,7 +137,7 @@
         </ul>
       </div>
       <div class="form-filters__wrapper form-filters__input-date">
-        <h3 class="form-filters__title form-filters__title--input-date">ФИО</h3>
+        <h2 class="form-filters__title form-filters__title--input-date">ФИО</h2>
         <ul class="form-filters__list form-filters__list-input-date">
           <li class="form-filters__item">
             <label class="form-filters__label" for="name-client">Имя:</label>
@@ -156,7 +154,7 @@
         </ul>
       </div>
       <div class="form-filters__wrapper form-filters__tel">
-        <h3 class="form-filters__title form-filters__title--tel">Тел</h3>
+        <h2 class="form-filters__title form-filters__title--tel">Тел</h2>
         <label class="visually-hidden" for="number-phone">Поле ввода для телефона.</label>
         <div class="form-filters__wrapper-tel">
           <input class="form-filters__input form-filters__input--field-tel" type="tel" id="number-phone" name="form-filters-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
@@ -166,7 +164,7 @@
         </div>
       </div>
       <div class="form-filters__wrapper form-filters__mail">
-        <h3 class="form-filters__title form-filters__title--mail">E-mail</h3>
+        <h2 class="form-filters__title form-filters__title--mail">E-mail</h2>
         <label class="visually-hidden" for="e-mail">Поле ввода для электронной почты.</label>
         <div class="form-filters__wrapper-mail">
           <input class="form-filters__input form-filters__input--field-mail" type="email" id="e-mail" name="form-filters-email" placeholder="Ваш Email*" required>
@@ -176,7 +174,7 @@
         </div>
       </div>
       <div class="form-filters__wrapper form-filters__additionally">
-        <h3 class="form-filters__title form-filters__title--additionally">Доп</h3>
+        <h2 class="form-filters__title form-filters__title--additionally">Доп</h2>
         <label class="visually-hidden" for="additional-information">Поле для дополнительной информации.</label>
         <textarea class="form-filters__textarea form-filters__textarea--field-additionally" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
@@ -232,5 +230,4 @@
   </footer>
   <script src="js/slider.js"></script>
 </body>
-
 </html>

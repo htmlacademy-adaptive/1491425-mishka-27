@@ -73,6 +73,10 @@
   .promo-household__link:hover {
     transform: translateY(-5px);
   }
+
+  .promo-household__link:focus-visible {
+    transform: translateY(-5px);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -94,12 +98,10 @@
 
 .promo-household__link--lamp {
   background-color: @downy;
-  fill: @dark-cyan;
 }
 
 .promo-household__link--cube {
   background-color: @bg-fountain-blue;
-  fill: @dark-cyan;
 }
 
 .promo-household__link--lamp:hover,
@@ -116,12 +118,16 @@
   position: absolute;
   top: 23px;
   right: 36px;
+  fill: @dark-cyan;
+  opacity: 0.5;
 }
 
 .promo-household__icon-cube {
   position: absolute;
   top: 21px;
   right: 27px;
+  fill: @dark-cyan;
+  opacity: 0.5;
 }
 
 @media (min-width: @tablet-width) {
@@ -131,19 +137,19 @@
   }
 
   .promo-household__icon-cube {
-    top: 32px;
+    top: 31px;
     right: 96px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo-household__icon-lamp {
-    top: 32px;
+    top: 30px;
     right: 36px;
   }
 
   .promo-household__icon-cube {
-    top: 33px;
+    top: 31px;
     right: 35px;
   }
 }

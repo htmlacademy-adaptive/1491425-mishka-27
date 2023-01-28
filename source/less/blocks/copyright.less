@@ -1,6 +1,6 @@
 .copyright {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: 128px 27px;
   grid-auto-flow: dense;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,20 @@
 
 .copyright__link {
   display: flex;
+  margin-top: 1px;
   grid-column: 2 / 1 span;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__link {
+    margin-right: 0;
+  }
 }
 
 .copyright__icon-html-academy {

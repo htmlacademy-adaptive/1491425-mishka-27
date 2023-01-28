@@ -9,14 +9,42 @@
   .order-main {
     width: 768px;
     padding-top: 57px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
+    background-color: @bg-seashell;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .order-main__title--decor-wave::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 299px;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/icon-wave-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 }
 
 @media (min-width: @desktop-width) {
   .order-main {
     width: 1150px;
-    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-main__title--decor-wave::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    width: 1150px;
+    height: 34px;
+    background-image: url("../img/icon-wave-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -31,22 +59,20 @@
 
 @media (min-width: @tablet-width) {
   .order-main__title {
-    margin-top: -102px;
-    margin-bottom: 0;
-    padding-top: 102px;
-    padding-bottom: 77px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin: 0;
+    padding: 0 50px;
+    padding-bottom: 85px;
     .title-h1 (@f-size: 43px; @l-height: 50px;);
+    background-color: @bg-seashell;
   }
 }
 
 @media (min-width: @desktop-width) {
   .order-main__title {
     position: relative;
-    margin-top: -100px;
-    padding-top: 101px;
-    padding-bottom: 96px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 97px;
     background-color: @bg-seashell;
     .title-h1 (@f-size: 53px; @l-height: 57px;);
   }
@@ -54,8 +80,7 @@
 
 .order-main__text {
   .text (@f-size: 13px;);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0 30px;
   padding-top: 18px;
   text-align: left;
@@ -64,10 +89,9 @@
 @media (min-width: @tablet-width) {
   .order-main__text {
     .text (@f-size: 17px; @l-height: 30px;);
-    padding-top: 64px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 20px;
+    padding: 0 50px;
+    padding-top: 56px;
+    background-color: @white;
   }
 }
 
