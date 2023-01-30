@@ -1,43 +1,47 @@
-.production-process {
+@media (min-width: @desktop-width) {
+  .production-process {
+    padding-top: 20px;
+    padding-bottom: 44px;
+  }
+}
+
+.production-process__container-content {
   position: relative;
+  width: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: dense;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 30px;
   padding-top: 26px;
-  background-color: @white;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
-  .production-process {
-    margin: 0;
+  .production-process__container-content {
+    width: 768px;
     margin-top: -1px;
     padding: 0 50px;
     padding-top: 50px;
     padding-bottom: 52px;
-    background-color: @white;
     border: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .production-process {
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 44px;
+  .production-process__container-content {
+    width: 1150px;
+    padding: 0 50px;
     grid-template-columns: 682px 1fr;
     grid-template-rows: 38% 62%;
   }
 }
 
-.production-process--bg-state:hover {
+.production-process__container-content--bg-state:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.production-process--bg-state:active {
+.production-process__container-content--bg-state:active {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -85,15 +89,10 @@
   .production-process__title {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 46px;
-    padding-left: 79px;
-    padding-right: 50px;
-    padding-bottom: 28px;
+    padding: 46px 48px 28px 79px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column: 2 / 1 span;
-    align-self: flex-start;
-    row-gap: 2px;
+    grid-column: 2/1 span;
+    row-gap: 27px;
   }
 }
 
@@ -187,7 +186,7 @@
   .production-process__wrapper-bottom {
     display: grid;
     padding: 0;
-    padding-right: 50px;
+    padding-right: 56px;
     padding-left: 80px;
     grid-column: 2 / 1 span;
     grid-template-rows: repeat(2, max-content);
@@ -243,6 +242,6 @@
 @media (min-width: @desktop-width) {
   .production-process__button {
     width: 226px;
-    margin: 0;
+    margin-bottom: 0;
   }
 }

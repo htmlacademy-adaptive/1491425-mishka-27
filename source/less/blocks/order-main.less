@@ -1,16 +1,46 @@
 .order-main {
-  width: 320px;
-  margin: 0 auto;
   padding-top: 0;
   padding-bottom: 55px;
 }
 
 @media (min-width: @tablet-width) {
   .order-main {
+    padding: 0;
+  }
+}
+
+.order-main__wrapper-title {
+  background-color: @bg-seashell;
+}
+
+.order-main__title {
+  .title-h1 ();
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 72px;
+  padding-bottom: 74px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .order-main__title {
     width: 768px;
+    padding: 0 50px;
     padding-top: 57px;
-    padding-bottom: 0;
-    background-color: @bg-seashell;
+    padding-bottom: 85px;
+    .title-h1 (@f-size: 43px; @l-height: 50px;);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-main__title {
+    position: relative;
+    width: 1150px;
+    padding-top: 57px;
+    padding-bottom: 97px;
+    .title-h1 (@f-size: 53px; @l-height: 57px;);
   }
 }
 
@@ -30,12 +60,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .order-main {
-    width: 1150px;
-  }
-}
-
-@media (min-width: @desktop-width) {
   .order-main__title--decor-wave::after {
     content: "";
     position: absolute;
@@ -48,55 +72,30 @@
   }
 }
 
-.order-main__title {
-  .title-h1 ();
-  margin: 0;
-  padding-top: 72px;
-  padding-bottom: 73px;
-  background-color: @bg-seashell;
-  text-align: center;
-}
-
-@media (min-width: @tablet-width) {
-  .order-main__title {
-    margin: 0;
-    padding: 0 50px;
-    padding-bottom: 85px;
-    .title-h1 (@f-size: 43px; @l-height: 50px;);
-    background-color: @bg-seashell;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .order-main__title {
-    position: relative;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 97px;
-    background-color: @bg-seashell;
-    .title-h1 (@f-size: 53px; @l-height: 57px;);
-  }
-}
-
 .order-main__text {
   .text (@f-size: 13px;);
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 26px;
   padding: 0 30px;
-  padding-top: 18px;
+  padding-top: 17px;
   text-align: left;
+  background-color: @white;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .order-main__text {
-    .text (@f-size: 17px; @l-height: 30px;);
+    width: 768px;
     padding: 0 50px;
     padding-top: 56px;
-    background-color: @white;
+    .text (@f-size: 17px; @l-height: 30px;);
   }
 }
 
 @media (min-width: @desktop-width) {
   .order-main__text {
+    width: 1150px;
     padding-left: 225px;
     padding-right: 250px;
     padding-top: 116px;

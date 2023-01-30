@@ -14,219 +14,231 @@
   <title>Сделать заказ</title>
 </head>
 <body class="page__body">
-  <header class="main-header">
-    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-      <a class="main-navigation__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg" width="149" height="72">
-          <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="114" height="46">
-          <img class="main-navigation__logo-image" src="img/header-logo-mobile.svg" srcset="img/header-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка.">
-        </picture>
-      </a>
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <ul class="main-navigation__list navigation-site navigation-site--bg-seconadary">
-        <li class="navigation-site__item navigation-site__grid-col-1">
-          <a class="navigation-site__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="navigation-site__item navigation-site__grid-col-2">
-          <a class="navigation-site__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-navigation__list navigation-user">
-        <li class="navigation-user__item navigation-user__grid-col-1">
-          <a class="navigation-user__link navigation-user__link-search" href="#">
-            <svg class="navigation-user__link-icon-search" width="18" height="18">
-              <use href="img/icon/sprite.svg#icon-search"></use>
-            </svg>
-            <span class="navigation-user__link-text navigation-user__link-text--search">Поиск по сайту</span>
-            <span class="visually-hidden">Поиск по сайту Мишка.</span>
-          </a>
-        </li>
-        <li class="navigation-user__item navigation-user__grid-col-2">
-          <a class="navigation-user__link navigation-user__link-cart" href="#">
-            <svg class="navigation-user__link-icon-cart" width="21" height="18">
-              <use href="img/icon/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="navigation-user__link-text navigation-user__link-text--cart">Корзина: пока пуста</span>
-          </a>
-        </li>
-      </ul>
-      <div class="main-navigation__sale main-navigation__sale--bg-seconadary">
-        <ul class="main-navigation__sale-list">
-          <li class="main-navigation__sale-item">
-            <a class="main-navigation__sale-link" href="#">Новые поступления</a>
+  <header class="main-header main-header--bg-secondary">
+    <div class="main-header__wrapper">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <a class="main-navigation__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg" width="149" height="72">
+            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg" width="114" height="46">
+            <img class="main-navigation__logo-image" src="img/header-logo-mobile.svg" srcset="img/header-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка.">
+          </picture>
+        </a>
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-navigation__list navigation-site">
+          <li class="navigation-site__item navigation-site__grid-col-1">
+            <a class="navigation-site__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-navigation__sale-item">
-            <a class="main-navigation__sale-link" href="#">Распродажа</a>
+          <li class="navigation-site__item navigation-site__grid-col-2">
+            <a class="navigation-site__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <p class="main-navigation__sale-text">Бесплатная доставка по&nbsp;России</p>
-      </div>
-    </nav>
+        <ul class="main-navigation__list navigation-user">
+          <li class="navigation-user__item navigation-user__grid-col-1">
+            <a class="navigation-user__link navigation-user__link-search" href="#">
+              <svg class="navigation-user__link-icon-search" width="18" height="18">
+                <use href="img/icon/sprite.svg#icon-search"></use>
+              </svg>
+              <span class="navigation-user__link-text navigation-user__link-text--search">Поиск по сайту</span>
+              <span class="visually-hidden">Поиск по сайту Мишка.</span>
+            </a>
+          </li>
+          <li class="navigation-user__item navigation-user__grid-col-2">
+            <a class="navigation-user__link navigation-user__link-cart" href="#">
+              <svg class="navigation-user__link-icon-cart" width="21" height="18">
+                <use href="img/icon/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="navigation-user__link-text navigation-user__link-text--cart">Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-navigation__sale">
+          <ul class="main-navigation__sale-list">
+            <li class="main-navigation__sale-item">
+              <a class="main-navigation__sale-link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-navigation__sale-item">
+              <a class="main-navigation__sale-link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="main-navigation__sale-text">Бесплатная доставка по&nbsp;России</p>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="order-main">
-    <h1 class="order-main__title order-main__title--decor-wave">Вязание на заказ</h1>
+    <div class="order-main__wrapper-title">
+      <h1 class="order-main__title order-main__title--decor-wave">Вязание на заказ</h1>
+    </div>
     <p class="order-main__text">Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
     <form class="order-main__form form-filters" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="form-filters__wrapper form-filters__radio">
-        <h2 class="form-filters__title form-filters__title--radio">Тип</h2>
-        <ul class="form-filters__list form-filters__list-radio">
-          <li class="form-filters__item">
-            <label class="control-radio">
-              <input class="visually-hidden control-radio__input" type="radio" name="type-interior" value="interior-accessory" checked="checked">
-              <span class="control-radio__custom"></span>
-              <span class="control-radio__text">Аксессуар для интерьера</span>
-            </label>
-          </li>
-          <li class="form-filters__item">
-            <label class="control-radio">
-              <input class="visually-hidden control-radio__input" type="radio" name="type-interior" value="children-toy">
-              <span class="control-radio__custom"></span>
-              <span class="control-radio__text">Детская игрушка</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div class="form-filters__wrapper form-filters__checkbox">
-        <h2 class="form-filters__title form-filters__title--checkbox">Цвет</h2>
-        <ul class="form-filters__list form-filters__list-checkbox">
-          <li class="form-filters__item">
-            <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-white" checked="checked">
-              <span class="control-checkbox__custom"></span>
-              <span class="control-checkbox__text">Белый</span>
-            </label>
-          </li>
-          <li class="form-filters__item">
-            <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-gray" checked="checked">
-              <span class="control-checkbox__custom"></span>
-              <span class="control-checkbox__text">Серый</span>
-            </label>
-          </li>
-          <li class="form-filters__item">
-            <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-tiffany">
-              <span class="control-checkbox__custom"></span>
-              <span class="control-checkbox__text">Тиффани</span>
-            </label>
-          </li>
-          <li class="form-filters__item">
-            <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-black">
-              <span class="control-checkbox__custom"></span>
-              <span class="control-checkbox__text">Черный</span>
-            </label>
-          </li>
-          <li class="form-filters__item">
-            <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-pink">
-              <span class="control-checkbox__custom"></span>
-              <span class="control-checkbox__text">Розовый</span>
-            </label>
-          </li>
-          <li class="form-filters__item">
-            <label class="control-checkbox">
-              <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-orange">
-              <span class="control-checkbox__custom"></span>
-              <span class="control-checkbox__text">Оранжевый</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div class="form-filters__wrapper form-filters__input-date">
-        <h2 class="form-filters__title form-filters__title--input-date">ФИО</h2>
-        <ul class="form-filters__list form-filters__list-input-date">
-          <li class="form-filters__item">
-            <label class="form-filters__label" for="name-client">Имя:</label>
-            <input class="form-filters__input form-filters__input--field-name" type="text" id="name-client" placeholder="Введите ваше имя*" required>
-          </li>
-          <li class="form-filters__item">
-            <label class="form-filters__label" for="surname-client">Фамилия:</label>
-            <input class="form-filters__input form-filters__input--field-surname" type="text" id="surname-client" placeholder="Укажите фамилию*" required>
-          </li>
-          <li class="form-filters__item">
-            <label class="form-filters__label" for="patronymic-client">Отчество:</label>
-            <input class="form-filters__input form-filters__input--field-patronymic" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
-          </li>
-        </ul>
-      </div>
-      <div class="form-filters__wrapper form-filters__tel">
-        <h2 class="form-filters__title form-filters__title--tel">Тел</h2>
-        <label class="visually-hidden" for="number-phone">Поле ввода для телефона.</label>
-        <div class="form-filters__wrapper-tel">
-          <input class="form-filters__input form-filters__input--field-tel" type="tel" id="number-phone" name="form-filters-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <svg class="form-filters__icon-phone" width="25" height="24">
-            <use href="img/icon/sprite.svg#icon-phone"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="form-filters__wrapper form-filters__mail">
-        <h2 class="form-filters__title form-filters__title--mail">E-mail</h2>
-        <label class="visually-hidden" for="e-mail">Поле ввода для электронной почты.</label>
-        <div class="form-filters__wrapper-mail">
-          <input class="form-filters__input form-filters__input--field-mail" type="email" id="e-mail" name="form-filters-email" placeholder="Ваш Email*" required>
-          <svg class="form-filters__icon-mail" width="32" height="21">
-            <use href="img/icon/sprite.svg#icon-mail"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="form-filters__wrapper form-filters__additionally">
-        <h2 class="form-filters__title form-filters__title--additionally">Доп</h2>
-        <label class="visually-hidden" for="additional-information">Поле для дополнительной информации.</label>
-        <textarea class="form-filters__textarea form-filters__textarea--field-additionally" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-      </div>
-      <p class="form-filters__text">*Поля обязательны для заполнения</p>
-      <button class="form-filters__button primary-button primary-button--states" type="submit">Отправить заказ</button>
+          <div class="form-filters__wrapper form-filters__radio">
+            <h2 class="form-filters__title form-filters__title--radio">Тип</h2>
+            <ul class="form-filters__list form-filters__list-radio">
+              <li class="form-filters__item">
+                <label class="control-radio">
+                  <input class="visually-hidden control-radio__input" type="radio" name="type-interior" value="interior-accessory" checked="checked">
+                  <span class="control-radio__custom"></span>
+                  <span class="control-radio__text">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="form-filters__item">
+                <label class="control-radio">
+                  <input class="visually-hidden control-radio__input" type="radio" name="type-interior" value="children-toy">
+                  <span class="control-radio__custom"></span>
+                  <span class="control-radio__text">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-filters__outer-wrapper">
+            <div class="form-filters__wrapper form-filters__checkbox">
+              <h2 class="form-filters__title form-filters__title--checkbox">Цвет</h2>
+              <ul class="form-filters__list form-filters__list-checkbox">
+                <li class="form-filters__item">
+                  <label class="control-checkbox">
+                    <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-white" checked="checked">
+                    <span class="control-checkbox__custom"></span>
+                    <span class="control-checkbox__text">Белый</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="control-checkbox">
+                    <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-gray" checked="checked">
+                    <span class="control-checkbox__custom"></span>
+                    <span class="control-checkbox__text">Серый</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="control-checkbox">
+                    <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-tiffany">
+                    <span class="control-checkbox__custom"></span>
+                    <span class="control-checkbox__text">Тиффани</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="control-checkbox">
+                    <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-black">
+                    <span class="control-checkbox__custom"></span>
+                    <span class="control-checkbox__text">Черный</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="control-checkbox">
+                    <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-pink">
+                    <span class="control-checkbox__custom"></span>
+                    <span class="control-checkbox__text">Розовый</span>
+                  </label>
+                </li>
+                <li class="form-filters__item">
+                  <label class="control-checkbox">
+                    <input class="visually-hidden control-checkbox__input" type="checkbox" name="color-orange">
+                    <span class="control-checkbox__custom"></span>
+                    <span class="control-checkbox__text">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-filters__wrapper form-filters__input-date">
+            <h2 class="form-filters__title form-filters__title--input-date">ФИО</h2>
+            <ul class="form-filters__list form-filters__list-input-date">
+              <li class="form-filters__item">
+                <label class="form-filters__label" for="name-client">Имя:</label>
+                <input class="form-filters__input form-filters__input--field-name" type="text" id="name-client" placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="form-filters__item">
+                <label class="form-filters__label" for="surname-client">Фамилия:</label>
+                <input class="form-filters__input form-filters__input--field-surname" type="text" id="surname-client" placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="form-filters__item">
+                <label class="form-filters__label" for="patronymic-client">Отчество:</label>
+                <input class="form-filters__input form-filters__input--field-patronymic" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </div>
+          <div class="form-filters__outer-wrapper">
+            <div class="form-filters__wrapper form-filters__tel">
+              <h2 class="form-filters__title form-filters__title--tel">Тел</h2>
+              <label class="visually-hidden" for="number-phone">Поле ввода для телефона.</label>
+              <div class="form-filters__wrapper-tel">
+                <input class="form-filters__input form-filters__input--field-tel" type="tel" id="number-phone" name="form-filters-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <svg class="form-filters__icon-phone" width="25" height="24">
+                  <use href="img/icon/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-filters__wrapper form-filters__mail">
+              <h2 class="form-filters__title form-filters__title--mail">E-mail</h2>
+              <label class="visually-hidden" for="e-mail">Поле ввода для электронной почты.</label>
+              <div class="form-filters__wrapper-mail">
+                <input class="form-filters__input form-filters__input--field-mail" type="email" id="e-mail" name="form-filters-email" placeholder="Ваш Email*" required>
+                <svg class="form-filters__icon-mail" width="32" height="21">
+                  <use href="img/icon/sprite.svg#icon-mail"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="form-filters__wrapper form-filters__additionally">
+            <h2 class="form-filters__title form-filters__title--additionally">Доп</h2>
+            <label class="visually-hidden" for="additional-information">Поле для дополнительной информации.</label>
+            <textarea class="form-filters__textarea form-filters__textarea--field-additionally" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+          <div class="form-filters__wrapper form-filters__inner-wrapper">
+            <p class="form-filters__text">*Поля обязательны для заполнения</p>
+            <button class="form-filters__button primary-button primary-button--states" type="submit">Отправить заказ</button>
+          </div>
     </form>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo" href="index.html">
-      <svg class="main-footer__logo-icon" width="102" height="34">
-        <use href="img/icon/sprite.svg#icon-footer-logo"></use>
-      </svg>
-      <span class="visually-hidden">Перейти на главную страницу сайта Мишка.</span>
-    </a>
-    <section class="socials">
-      <h2 class="visually-hidden">Социальные сети HTML Academy.</h2>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link" href="https://vk.com/htmlacademy">
-            <svg class="socials__link-icon-vkontakte" width="28" height="23">
-              <use href="img/icon/sprite.svg#icon-vk"></use>
-            </svg>
-            <span class="visually-hidden">Сообщество HTML Academy в Вконтакте.</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
-            <svg class="socials__link-icon-youtube" width="28" height="23">
-              <use href="img/icon/sprite.svg#icon-youtube"></use>
-            </svg>
-            <span class="visually-hidden">Ютуб канал HTML Academy.</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://t.me/htmlacademy">
-            <svg class="socials__link-icon-telegram" width="28" height="23">
-              <use href="img/icon/sprite.svg#icon-tg"></use>
-            </svg>
-            <span class="visually-hidden">Сообщество HTML Academy в Телеграме.</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="copyright">
-      <h2 class="visually-hidden">Ссылка на сайт HTML Academy.</h2><b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__icon-html-academy" width="27" height="35">
-          <use href="img/icon/sprite.svg#icon-html-academy"></use>
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo" href="index.html">
+        <svg class="main-footer__logo-icon" width="102" height="34">
+          <use href="img/icon/sprite.svg#icon-footer-logo"></use>
         </svg>
-        <span class="visually-hidden">Онлайн курсы по веб-программированию HTML Academy.</span>
+        <span class="visually-hidden">Перейти на главную страницу сайта Мишка.</span>
       </a>
-    </section>
+      <section class="socials">
+        <h2 class="visually-hidden">Социальные сети HTML Academy.</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="https://vk.com/htmlacademy">
+              <svg class="socials__link-icon-vkontakte" width="28" height="23">
+                <use href="img/icon/sprite.svg#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Сообщество HTML Academy в Вконтакте.</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="socials__link-icon-youtube" width="28" height="23">
+                <use href="img/icon/sprite.svg#icon-youtube"></use>
+              </svg>
+              <span class="visually-hidden">Ютуб канал HTML Academy.</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://t.me/htmlacademy">
+              <svg class="socials__link-icon-telegram" width="28" height="23">
+                <use href="img/icon/sprite.svg#icon-tg"></use>
+              </svg>
+              <span class="visually-hidden">Сообщество HTML Academy в Телеграме.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <h2 class="visually-hidden">Ссылка на сайт HTML Academy.</h2><b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__icon-html-academy" width="27" height="35">
+            <use href="img/icon/sprite.svg#icon-html-academy"></use>
+          </svg>
+          <span class="visually-hidden">Онлайн курсы по веб-программированию HTML Academy.</span>
+        </a>
+      </section>
+    </div>
   </footer>
   <script src="js/slider.js"></script>
 </body>
