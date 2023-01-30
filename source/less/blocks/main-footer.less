@@ -1,4 +1,8 @@
 .main-footer {
+  background-color: @bg-seashell;
+}
+
+.main-footer__wrapper {
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -7,12 +11,11 @@
   padding: 0 30px;
   padding-top: 28px;
   padding-bottom: 22px;
-  background-color: @bg-seashell;
   box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer {
+  .main-footer__wrapper {
     display: grid;
     grid-template-columns: repeat(3, max-content);
     grid-auto-flow: dense;
@@ -25,12 +28,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-footer {
+  .main-footer__wrapper {
     width: 1150px;
   }
 }
 
-.main-footer::after {
+.main-footer__wrapper::after {
   content: "";
   width: 260px;
   height: 1px;
@@ -39,7 +42,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer::after {
+  .main-footer__wrapper::after {
     display: none;
   }
 }
